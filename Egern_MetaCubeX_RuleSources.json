@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T14:53:00.481Z",
+  "generated_at": "2026-04-15T14:57:51.901Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
@@ -7,7 +7,7 @@
     "date": "2026-04-14T23:12:46Z",
     "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/d3f49c8228588ae661854d60eb03f561ee9abe1f"
   },
-  "clash_config": "Clash_Config.yml",
+  "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
   "providers": {
     "category-ads-all": {

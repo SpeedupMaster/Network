@@ -1,0 +1,471 @@
+{
+  "source": "MetaCubeX/meta-rules-dat",
+  "ref": "meta",
+  "providers": [
+    {
+      "name": "category-ads-all",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list"
+    },
+    {
+      "name": "private",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.list"
+    },
+    {
+      "name": "private-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list"
+    },
+    {
+      "name": "geolocation-cn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-cn.list"
+    },
+    {
+      "name": "cn-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list"
+    },
+    {
+      "name": "geolocation-!cn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list"
+    },
+    {
+      "name": "category-ai-chat-!cn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-chat-!cn.list"
+    },
+    {
+      "name": "openai",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.list"
+    },
+    {
+      "name": "anthropic",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/anthropic.list"
+    },
+    {
+      "name": "google-gemini",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-gemini.list"
+    },
+    {
+      "name": "youtube",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.list"
+    },
+    {
+      "name": "google",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.list"
+    },
+    {
+      "name": "google-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list"
+    },
+    {
+      "name": "microsoft",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list"
+    },
+    {
+      "name": "onedrive",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/onedrive.list"
+    },
+    {
+      "name": "apple",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.list"
+    },
+    {
+      "name": "icloud",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/icloud.list"
+    },
+    {
+      "name": "telegram",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/telegram.list"
+    },
+    {
+      "name": "telegram-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/telegram.list"
+    },
+    {
+      "name": "twitter",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/twitter.list"
+    },
+    {
+      "name": "twitter-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/twitter.list"
+    },
+    {
+      "name": "facebook",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/facebook.list"
+    },
+    {
+      "name": "instagram",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/instagram.list"
+    },
+    {
+      "name": "whatsapp",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/whatsapp.list"
+    },
+    {
+      "name": "facebook-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.list"
+    },
+    {
+      "name": "discord",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/discord.list"
+    },
+    {
+      "name": "tiktok",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tiktok.list"
+    },
+    {
+      "name": "line",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/line.list"
+    },
+    {
+      "name": "reddit",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/reddit.list"
+    },
+    {
+      "name": "linkedin",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/linkedin.list"
+    },
+    {
+      "name": "snap",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/snap.list"
+    },
+    {
+      "name": "pinterest",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/pinterest.list"
+    },
+    {
+      "name": "tumblr",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tumblr.list"
+    },
+    {
+      "name": "netflix",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netflix.list"
+    },
+    {
+      "name": "netflix-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/netflix.list"
+    },
+    {
+      "name": "disney",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/disney.list"
+    },
+    {
+      "name": "hbo",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/hbo.list"
+    },
+    {
+      "name": "hulu",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/hulu.list"
+    },
+    {
+      "name": "primevideo",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/primevideo.list"
+    },
+    {
+      "name": "apple-tvplus",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple-tvplus.list"
+    },
+    {
+      "name": "spotify",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/spotify.list"
+    },
+    {
+      "name": "twitch",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/twitch.list"
+    },
+    {
+      "name": "dazn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/dazn.list"
+    },
+    {
+      "name": "bahamut",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bahamut.list"
+    },
+    {
+      "name": "biliintl",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/biliintl.list"
+    },
+    {
+      "name": "niconico",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/niconico.list"
+    },
+    {
+      "name": "abema",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/abema.list"
+    },
+    {
+      "name": "viu",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/viu.list"
+    },
+    {
+      "name": "kktv",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/kktv.list"
+    },
+    {
+      "name": "steam",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.list"
+    },
+    {
+      "name": "epicgames",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames.list"
+    },
+    {
+      "name": "ea",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ea.list"
+    },
+    {
+      "name": "ubisoft",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ubisoft.list"
+    },
+    {
+      "name": "blizzard",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/blizzard.list"
+    },
+    {
+      "name": "gog",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/gog.list"
+    },
+    {
+      "name": "riot",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/riot.list"
+    },
+    {
+      "name": "playstation",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/playstation.list"
+    },
+    {
+      "name": "xbox",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/xbox.list"
+    },
+    {
+      "name": "nintendo",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/nintendo.list"
+    },
+    {
+      "name": "github",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.list"
+    },
+    {
+      "name": "gitlab",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/gitlab.list"
+    },
+    {
+      "name": "atlassian",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/atlassian.list"
+    },
+    {
+      "name": "aws",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/aws.list"
+    },
+    {
+      "name": "azure",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/azure.list"
+    },
+    {
+      "name": "cloudflare",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.list"
+    },
+    {
+      "name": "digitalocean",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/digitalocean.list"
+    },
+    {
+      "name": "vercel",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/vercel.list"
+    },
+    {
+      "name": "netlify",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netlify.list"
+    },
+    {
+      "name": "cloudflare-ip",
+      "behavior": "ipcidr",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list"
+    },
+    {
+      "name": "docker",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/docker.list"
+    },
+    {
+      "name": "npmjs",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/npmjs.list"
+    },
+    {
+      "name": "jetbrains",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/jetbrains.list"
+    },
+    {
+      "name": "stackexchange",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/stackexchange.list"
+    },
+    {
+      "name": "dropbox",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/dropbox.list"
+    },
+    {
+      "name": "notion",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/notion.list"
+    },
+    {
+      "name": "paypal",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/paypal.list"
+    },
+    {
+      "name": "stripe",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/stripe.list"
+    },
+    {
+      "name": "wise",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/wise.list"
+    },
+    {
+      "name": "binance",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/binance.list"
+    },
+    {
+      "name": "category-scholar-!cn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-scholar-!cn.list"
+    },
+    {
+      "name": "coursera",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/coursera.list"
+    },
+    {
+      "name": "udemy",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/udemy.list"
+    },
+    {
+      "name": "edx",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/edx.list"
+    },
+    {
+      "name": "khanacademy",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/khanacademy.list"
+    },
+    {
+      "name": "wikimedia",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/wikimedia.list"
+    },
+    {
+      "name": "bbc",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bbc.list"
+    },
+    {
+      "name": "cnn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cnn.list"
+    },
+    {
+      "name": "nytimes",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/nytimes.list"
+    },
+    {
+      "name": "wsj",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/wsj.list"
+    },
+    {
+      "name": "bloomberg",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bloomberg.list"
+    },
+    {
+      "name": "amazon",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/amazon.list"
+    },
+    {
+      "name": "ebay",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ebay.list"
+    },
+    {
+      "name": "cn",
+      "behavior": "domain",
+      "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list"
+    }
+  ]
+}

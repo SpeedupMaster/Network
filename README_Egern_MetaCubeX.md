@@ -9,8 +9,8 @@ into Egern YAML rule-set files.
 npm run sync:metacubex
 ```
 
-The script reads MetaCubeX rule providers from `Clash_Config.yml`, converts the
-matching `.list` files, and writes:
+The script reads MetaCubeX rule providers from `MetaCubeX_Providers.json`,
+converts the matching `.list` files, and writes:
 
 - `Egern_RuleSets/*.yaml`
 - `Egern_MetaCubeX_RuleSources.json`

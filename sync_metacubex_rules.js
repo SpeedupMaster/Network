@@ -4,10 +4,9 @@ const path = require('path');
 
 const repo = 'MetaCubeX/meta-rules-dat';
 const ref = 'meta';
-const rawBase = `https://raw.githubusercontent.com/${repo}/refs/heads/${ref}`;
-const githubBase = `https://github.com/${repo}/raw/refs/heads/${ref}`;
-
-const clashConfigPath = path.resolve(process.env.CLASH_CONFIG_PATH || 'Clash_Config.yml');
+const providerManifestPath = path.resolve(
+  process.env.METACUBEX_PROVIDER_MANIFEST || 'MetaCubeX_Providers.json',
+);
 const outputDir = path.resolve(process.env.EGERN_RULESET_DIR || 'Egern_RuleSets');
 const reportPath = path.resolve(
   process.env.EGERN_RULESOURCE_REPORT || 'Egern_MetaCubeX_RuleSources.json',
@@ -243,70 +242,23 @@ const fetchText = async (url, accept = 'text/plain,*/*') => {
   return await response.text();
 };
 
-const parseInlineProvider = (name, body) => {
-  const readProperty = (property) => {
-    const pattern = new RegExp(`${property}\\s*:\\s*("[^"]+"|'[^']+'|[^,}]+)`, 'i');
-    const match = body.match(pattern);
-    return match ? cleanValue(match[1]) : '';
-  };
-
-  return {
-    name,
-    behavior: readProperty('behavior').toLowerCase(),
-    url: readProperty('url'),
-  };
-};
-
-const readProvidersFromClashConfig = () => {
-  if (!fs.existsSync(clashConfigPath)) {
-    throw new Error(`Cannot find Clash config: ${clashConfigPath}`);
+const readProvidersFromManifest = () => {
+  if (!fs.existsSync(providerManifestPath)) {
+    throw new Error(`Cannot find provider manifest: ${providerManifestPath}`);
   }
 
-  const lines = fs.readFileSync(clashConfigPath, 'utf8').split(/\r?\n/);
-  const providers = [];
-  let insideProviders = false;
-
-  for (const line of lines) {
-    if (/^rule-providers:\s*$/.test(line)) {
-      insideProviders = true;
-      continue;
-    }
-    if (insideProviders && /^\S/.test(line) && !/^rule-providers:\s*$/.test(line)) {
-      break;
-    }
-    if (!insideProviders) continue;
-
-    const inlineMatch = line.match(/^\s{2}([^:\s][^:]*):\s*\{(.+)\}\s*$/);
-    if (!inlineMatch) continue;
-
-    const provider = parseInlineProvider(inlineMatch[1].trim(), inlineMatch[2]);
-    if (!provider.url.includes(repo)) continue;
-    providers.push(provider);
-  }
+  const manifest = JSON.parse(fs.readFileSync(providerManifestPath, 'utf8'));
+  const providers = Array.isArray(manifest.providers) ? manifest.providers : [];
 
   if (!providers.length) {
-    throw new Error(`No ${repo} rule-providers found in ${clashConfigPath}`);
+    throw new Error(`No providers found in ${providerManifestPath}`);
   }
 
-  return providers;
-};
-
-const toRawListUrl = (url) => {
-  if (url.startsWith(githubBase)) {
-    return `${rawBase}${url.slice(githubBase.length)}`.replace(/\.mrs(\?|$)/, '.list$1');
-  }
-  if (url.startsWith(rawBase)) {
-    return url.replace(/\.mrs(\?|$)/, '.list$1');
-  }
-
-  const githubMatch = url.match(
-    /^https:\/\/github\.com\/MetaCubeX\/meta-rules-dat\/raw\/refs\/heads\/meta\/(.+)$/i,
-  );
-  if (githubMatch) {
-    return `${rawBase}/${githubMatch[1]}`.replace(/\.mrs(\?|$)/, '.list$1');
-  }
-
-  throw new Error(`Unsupported MetaCubeX URL format: ${url}`);
+  return providers.map((provider) => ({
+    name: provider.name,
+    behavior: String(provider.behavior || '').toLowerCase(),
+    source_url: provider.source_url,
+  }));
 };
 
 const inferSourceKind = (provider, sourceUrl) => {
@@ -329,20 +281,20 @@ const fetchUpstreamCommit = async () => {
 const main = async () => {
   fs.mkdirSync(outputDir, { recursive: true });
 
-  const providers = readProvidersFromClashConfig();
+  const providers = readProvidersFromManifest();
   const upstream = await fetchUpstreamCommit();
   const report = {
     generated_at: new Date().toISOString(),
     source: repo,
     ref,
     upstream,
-    clash_config: path.relative(process.cwd(), clashConfigPath),
+    provider_manifest: path.relative(process.cwd(), providerManifestPath),
     output_dir: path.relative(process.cwd(), outputDir),
     providers: {},
   };
 
   for (const provider of providers) {
-    const sourceUrl = toRawListUrl(provider.url);
+    const sourceUrl = provider.source_url;
     const sourceKind = inferSourceKind(provider, sourceUrl);
     const text = await fetchText(sourceUrl);
     const converted = convertText(text, sourceKind);
