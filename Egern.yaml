@@ -1,0 +1,892 @@
+# 基本配置
+ipv6: false
+http_port: 3080
+socks_port: 3090
+allow_external_connections: true
+vif_only: true
+hide_vpn_icon: true
+public_ip_lookup_url: https://ifconfig.me/ip
+
+# VIF 排除路由
+vif_excluded_routes:
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+
+# DNS 劫持
+hijack_dns:
+  - '*:53'
+
+# 规则数据库
+geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+
+# 测速 URL
+proxy_latency_test_url: http://www.gstatic.com/generate_204
+direct_latency_test_url: http://www.apple.com/library/test/success.html
+
+compat_route: false
+include_all_networks: false
+include_apns: false
+include_cellular_services: false
+include_local_networks: false
+
+# DNS 配置
+dns:
+  bootstrap:
+    - system
+    - 223.5.5.5
+    - 119.29.29.29
+  upstreams:
+    AliDNS:
+      - h3://dns.alidns.com/dns-query
+    DNSPod:
+      - https://doh.pub/dns-query
+    Default:
+      - h3://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+  forward:
+    # 阿里系（CDN 调度深度依赖 AliDNS，专属转发收益最大）
+    - domain_suffix:
+        match: alibaba.com
+        value: AliDNS
+    - domain_suffix:
+        match: alipay.com
+        value: AliDNS
+    - domain_suffix:
+        match: alipayobjects.com
+        value: AliDNS
+    - domain_suffix:
+        match: aliapp.org
+        value: AliDNS
+    - domain_suffix:
+        match: alicdn.com
+        value: AliDNS
+    - domain_suffix:
+        match: aliyun.com
+        value: AliDNS
+    - domain_suffix:
+        match: taobao.com
+        value: AliDNS
+    - domain_suffix:
+        match: tmall.com
+        value: AliDNS
+    - domain_suffix:
+        match: dingtalk.com
+        value: AliDNS
+    - domain_suffix:
+        match: 1688.com
+        value: AliDNS
+    - domain_suffix:
+        match: youku.com
+        value: AliDNS
+    - domain_suffix:
+        match: uc.cn
+        value: AliDNS
+    - domain_suffix:
+        match: amap.com
+        value: AliDNS
+    - domain_suffix:
+        match: ele.me
+        value: AliDNS
+    - domain_suffix:
+        match: hichina.com
+        value: AliDNS
+    - domain_suffix:
+        match: alibabacloud.com
+        value: AliDNS
+    # 腾讯系（CDN 调度深度依赖 DNSPod，专属转发收益最大）
+    - domain_suffix:
+        match: qq.com
+        value: DNSPod
+    - domain_suffix:
+        match: wechat.com
+        value: DNSPod
+    - domain_suffix:
+        match: weixin.com
+        value: DNSPod
+    - domain_suffix:
+        match: tencent.com
+        value: DNSPod
+    - domain_suffix:
+        match: tencentcloud.com
+        value: DNSPod
+    - domain_suffix:
+        match: qcloud.com
+        value: DNSPod
+    - domain_suffix:
+        match: qpic.cn
+        value: DNSPod
+    - domain_suffix:
+        match: gtimg.com
+        value: DNSPod
+    # 本地域名直连
+    - domain_suffix:
+        match: local
+        value: system
+    - domain_suffix:
+        match: localdomain
+        value: system
+    - domain_suffix:
+        match: lan
+        value: system
+    - domain_suffix:
+        match: in-addr.arpa
+        value: system
+    - domain_suffix:
+        match: ip6.arpa
+        value: system
+    - domain_suffix:
+        match: router.asus.com
+        value: system
+    # 兜底（AliDNS h3 优先，DNSPod 备援）
+    - domain_wildcard:
+        match: '*'
+        value: Default
+
+policy_groups:
+  - external:
+      name: "subscription"
+      type: "select"
+      urls:
+        - "此处替换为你的真实订阅链接"
+      update_interval: 3600
+  - select:
+      name: "🚀 节点选择"
+      policies:
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - auto_test:
+      name: "⚡ 自动选择"
+      policies:
+        - "subscription"
+      flatten: true
+      interval: 300
+      tolerance: 100
+      timeout: 5
+  - select:
+      name: "🛑 广告拦截"
+      policies:
+        - "REJECT"
+        - "DIRECT"
+        - "🚀 节点选择"
+  - select:
+      name: "🤖 AI 服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "✨ Gemini"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📹 油管视频"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🔍 谷歌服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "Ⓜ️ 微软服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🍏 苹果服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📲 电报消息"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🐦 推特/X"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📘 Meta 系"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎙️ Discord"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "💬 其他社交"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎬 奈飞"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🏰 迪士尼+"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📺 欧美流媒体"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎌 亚洲流媒体"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎮 Steam"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🖥️ PC 游戏"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎯 主机游戏"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🐱 代码托管"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "☁️ 云服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🛠️ 开发工具"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "💾 网盘存储"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "💳 支付平台"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "₿ 加密货币"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📚 教育学术"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📰 新闻资讯"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🛒 海淘购物"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🏠 私有网络"
+      policies:
+        - "DIRECT"
+        - "REJECT"
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "subscription"
+  - select:
+      name: "🔒 国内服务"
+      policies:
+        - "DIRECT"
+        - "REJECT"
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "subscription"
+  - select:
+      name: "🌍 非中国"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🐟 漏网之鱼"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+rules:
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list"
+      policy: "🛑 广告拦截"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list"
+      policy: "✨ Gemini"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BardAI/BardAI.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Copilot/Copilot.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list"
+      policy: "📹 油管视频"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Scholar/Scholar.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Wikimedia/Wikimedia.list"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/AmazonCloud/AmazonCloud.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/CloudGlobal/CloudGlobal.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DigitalOcean/DigitalOcean.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Vercel/Vercel.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/CloudGlobal/CloudGlobal.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list"
+      policy: "🔍 谷歌服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list"
+      policy: "🔍 谷歌服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list"
+      policy: "🏠 私有网络"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list"
+      policy: "🏠 私有网络"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list"
+      policy: "🔒 国内服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
+      policy: "🔒 国内服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list"
+      policy: "📲 电报消息"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list"
+      policy: "📲 电报消息"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list"
+      policy: "🐱 代码托管"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitLab/GitLab.list"
+      policy: "🐱 代码托管"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Atlassian/Atlassian.list"
+      policy: "🐱 代码托管"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list"
+      policy: "Ⓜ️ 微软服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list"
+      policy: "Ⓜ️ 微软服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleTV/AppleTV.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list"
+      policy: "🍏 苹果服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+      policy: "🍏 苹果服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list"
+      policy: "🐦 推特/X"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list"
+      policy: "🐦 推特/X"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Whatsapp/Whatsapp.list"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list"
+      policy: "🎙️ Discord"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Line/Line.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/LinkedIn/LinkedIn.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Snap/Snap.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Tumblr/Tumblr.list"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+      policy: "🎬 奈飞"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+      policy: "🎬 奈飞"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list"
+      policy: "🏰 迪士尼+"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBO/HBO.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PrimeVideo/PrimeVideo.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DAZN/DAZN.list"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBiliIntl/BiliBiliIntl.list"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Niconico/Niconico.list"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Abema/Abema.list"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ViuTV/ViuTV.list"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/KKTV/KKTV.list"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+      policy: "🎮 Steam"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EA/EA.list"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Ubisoft/Ubisoft.list"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Blizzard/Blizzard.list"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gog/Gog.list"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Riot/Riot.list"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list"
+      policy: "🎯 主机游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Xbox/Xbox.list"
+      policy: "🎯 主机游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list"
+      policy: "🎯 主机游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Npmjs/Npmjs.list"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Jetbrains/Jetbrains.list"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Stackexchange/Stackexchange.list"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list"
+      policy: "💾 网盘存储"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Notion/Notion.list"
+      policy: "💾 网盘存储"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+      policy: "💳 支付平台"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Stripe/Stripe.list"
+      policy: "💳 支付平台"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/wise"
+      policy: "💳 支付平台"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Binance/Binance.list"
+      policy: "₿ 加密货币"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BBC/BBC.list"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/CNN/CNN.list"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NYTimes/NYTimes.list"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/USMedia/USMedia.list"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bloomberg/Bloomberg.list"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list"
+      policy: "🛒 海淘购物"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/eBay/eBay.list"
+      policy: "🛒 海淘购物"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global.list"
+      policy: "🌍 非中国"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list"
+      policy: "🔒 国内服务"
+      update_interval: 86400
+  - default:
+      policy: "🐟 漏网之鱼"
+
+mitm:
+  enabled: true
+  ca_p12: egern.p12
+  ca_passphrase: egern
+  hostnames:
+    excludes:
+    - '*abchina.com.cn'
+
+# 模块配置
+modules:
+- name: 跳过部分应用的代理检测
+  url: https://raw.githubusercontent.com/mieqq/mieqq/refs/heads/master/skip-proxy-lists.sgmodule
+  enabled: true
+  interval: 86400
+- name: Youtube (Music) Enhance
+  url: https://raw.githubusercontent.com/SpeedupMaster/LoonKissSurge/refs/heads/main/Surge/Official/YouTube%E5%8E%BB%E5%B9%BF%E5%91%8A%5BMaasea%5D.official.sgmodule
+  enabled: true
+  interval: 86400
+- name: 今日黄历
+  url: https://raw.githubusercontent.com/IBL3ND/MK/refs/heads/main/today_almanac.sgmodule
+  enabled: true
+  interval: 86400
+- name: 可莉广告过滤器
+  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%8F%AF%E8%8E%89%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%E5%99%A8.beta.sgmodule
+  enabled: true
+  interval: 86400
+- name: 淘宝去广告
+  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/%E6%B7%98%E5%AE%9D%E5%8E%BB%E5%B9%BF%E5%91%8A.sgmodule
+  enabled: true
+  interval: 86400
+- name: 网络连通性测试
+  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E7%BD%91%E7%BB%9C%E8%BF%9E%E9%80%9A%E6%80%A7%E6%B5%8B%E8%AF%95.official.sgmodule
+  enabled: true
+  interval: 86400
+- name: Chatgpt可用区域检测
+  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/GPT%20%E5%8F%AF%E7%94%A8%E6%A3%80%E6%B5%8B-%E6%97%A0%20WARP.official.sgmodule
+  enabled: true
+  interval: 86400
+- name: 流媒体检测
+  url: https://whatshub.top/sgmodule/media.sgmodule
+  enabled: true
+  interval: 86400
+- name: NetSpeed
+  url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.sgmodule
+  enabled: true
+  interval: 86400
+- name: IP信息
+  url: https://whatshub.top/sgmodule/ip-api.sgmodule
+  enabled: true
+  interval: 86400
+- name: 可莉插件中心2Egern
+  url: https://raw.githubusercontent.com/158212892/QuantumultXMark/refs/heads/main/My/Egern/modules/pluginhub.yaml
+  enabled: true
+  interval: 86400
+- name: Surge模块中心转Egern兼容
+  url: https://raw.githubusercontent.com/obs1379/Egern/refs/heads/main/surge.qingr.moe_for_Egern.sgmodule
+  enabled: true
+  interval: 86400
+- name: BoxJs
+  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20BoxJs.official.sgmodule
+  enabled: true
+  interval: 86400
+- name: Sub-Store
+  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Sub-Store.official.sgmodule
+  enabled: true
+  interval: 86400
+- name: Script Hub
+  url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
+  enabled: true
+  interval: 86400

@@ -1,0 +1,15 @@
+{
+  "name": "network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync:blackmatrix7": "node sync_blackmatrix7_rules.js",
+    "sync:metacubex": "node sync_metacubex_rules.js",
+    "test": "npm run sync:metacubex"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

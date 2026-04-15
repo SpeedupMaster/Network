@@ -1,0 +1,1379 @@
+{
+  "generated_at": "2026-04-15T13:01:33.185Z",
+  "source": "blackmatrix7/ios_rule_script",
+  "providers": {
+    "category-ads-all": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 278,
+        "ip_cidr_set": 486,
+        "ip_cidr6_set": 3,
+        "url_regex_set": 14
+      },
+      "no_resolve": true,
+      "unsupported": {
+        "AND": 1
+      }
+    },
+    "private": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 7,
+        "domain_suffix_set": 115,
+        "ip_cidr_set": 14,
+        "ip_cidr6_set": 4
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "private-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 14,
+        "ip_cidr6_set": 4
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "geolocation-cn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China_Domain.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_set": 20,
+        "domain_suffix_set": 3675
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "cn-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 17498,
+        "ip_cidr6_set": 5372
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "geolocation-!cn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_Domain.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_set": 125,
+        "domain_suffix_set": 33527
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "category-ai-chat-!cn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+          "mode": "all"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list",
+          "mode": "all"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
+          "mode": "all"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
+          "mode": "all"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BardAI/BardAI.list",
+          "mode": "all"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Copilot/Copilot.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 27,
+        "domain_keyword_set": 5,
+        "domain_suffix_set": 37,
+        "ip_cidr_set": 2,
+        "asn_set": 2
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "openai": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 7,
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 24,
+        "ip_cidr_set": 2,
+        "asn_set": 1
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "anthropic": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 2
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "google-gemini": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 3,
+        "domain_keyword_set": 3,
+        "domain_suffix_set": 7
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "youtube": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 179,
+        "ip_cidr_set": 2,
+        "ip_cidr6_set": 1,
+        "user_agent_set": 7
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "google": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_keyword_set": 5,
+        "domain_suffix_set": 691,
+        "user_agent_set": 3
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 5
+      }
+    },
+    "google-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 4,
+        "ip_cidr6_set": 1
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "microsoft": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_keyword_set": 4,
+        "domain_suffix_set": 663,
+        "user_agent_set": 3
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 2
+      }
+    },
+    "onedrive": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 3,
+        "domain_suffix_set": 13
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 2
+      }
+    },
+    "apple": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 7,
+        "ip_cidr_set": 10,
+        "ip_cidr6_set": 3,
+        "user_agent_set": 23
+      },
+      "no_resolve": true,
+      "unsupported": {
+        "PROCESS-NAME": 13
+      }
+    },
+    "icloud": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 59
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "telegram": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_set": 2,
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 22
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 5,
+        "OR": 1
+      }
+    },
+    "telegram-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 6,
+        "ip_cidr6_set": 4,
+        "asn_set": 5
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "twitter": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 26
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "twitter-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 6
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "facebook": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 2,
+        "domain_suffix_set": 544
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "instagram": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 3
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "whatsapp": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Whatsapp/Whatsapp.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 4,
+        "ip_cidr_set": 11
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "facebook-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 23,
+        "asn_set": 1
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "discord": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 29
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "tiktok": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 4,
+        "domain_keyword_set": 2,
+        "domain_suffix_set": 25,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "line": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Line/Line.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 8,
+        "ip_cidr_set": 16
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "reddit": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 8
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "linkedin": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/LinkedIn/LinkedIn.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 3,
+        "domain_suffix_set": 9
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "snap": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Snap/Snap.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 6
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "pinterest": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 23
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "tumblr": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Tumblr/Tumblr.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 3
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "netflix": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_set": 3,
+        "domain_keyword_set": 4,
+        "domain_suffix_set": 30,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "netflix-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 1115,
+        "ip_cidr6_set": 4
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "disney": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 172,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 2
+      }
+    },
+    "hbo": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBO/HBO.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 47,
+        "user_agent_set": 2
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "hulu": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 57
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "primevideo": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PrimeVideo/PrimeVideo.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 9,
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 6,
+        "user_agent_set": 2
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "apple-tvplus": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleTV/AppleTV.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 6,
+        "domain_suffix_set": 1,
+        "user_agent_set": 2
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "spotify": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 6,
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 20,
+        "ip_cidr_set": 2,
+        "user_agent_set": 1
+      },
+      "no_resolve": true,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "twitch": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 8,
+        "ip_cidr_set": 11,
+        "ip_cidr6_set": 1
+      },
+      "no_resolve": true,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "dazn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DAZN/DAZN.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 17,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "bahamut": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 6,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "biliintl": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBiliIntl/BiliBiliIntl.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "niconico": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Niconico/Niconico.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 9,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "abema": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Abema/Abema.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 5,
+        "domain_suffix_set": 15
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "viu": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ViuTV/ViuTV.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 8,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 3
+      }
+    },
+    "kktv": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/KKTV/KKTV.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 2,
+        "domain_suffix_set": 2,
+        "user_agent_set": 2
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "steam": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 3,
+        "domain_suffix_set": 51
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "epicgames": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 15
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "ea": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EA/EA.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 2,
+        "domain_suffix_set": 163
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "ubisoft": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Ubisoft/Ubisoft.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "blizzard": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Blizzard/Blizzard.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 39,
+        "ip_cidr_set": 23
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "gog": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gog/Gog.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 3
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "riot": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Riot/Riot.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 55
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "playstation": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 4
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "xbox": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Xbox/Xbox.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 4,
+        "domain_suffix_set": 38
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "nintendo": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 126,
+        "ip_cidr_set": 1
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "github": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 30
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "gitlab": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitLab/GitLab.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 6
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "atlassian": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Atlassian/Atlassian.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 5
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "aws": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/AmazonCloud/AmazonCloud.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 1552,
+        "ip_cidr6_set": 400
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "azure": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/CloudGlobal/CloudGlobal.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 19,
+        "ip_cidr_set": 1983,
+        "ip_cidr6_set": 859
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "cloudflare": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 43
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "digitalocean": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DigitalOcean/DigitalOcean.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 4
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "vercel": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Vercel/Vercel.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 27
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "netlify": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/CloudGlobal/CloudGlobal.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 19,
+        "ip_cidr_set": 1983,
+        "ip_cidr6_set": 859
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "cloudflare-ip": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list",
+          "mode": "ip"
+        }
+      ],
+      "fields": {
+        "ip_cidr_set": 15,
+        "ip_cidr6_set": 7
+      },
+      "no_resolve": true,
+      "unsupported": {}
+    },
+    "docker": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 3,
+        "domain_suffix_set": 4
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "npmjs": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Npmjs/Npmjs.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 3
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "jetbrains": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Jetbrains/Jetbrains.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 14
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "stackexchange": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Stackexchange/Stackexchange.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 20
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "dropbox": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 17
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "notion": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Notion/Notion.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 5
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "paypal": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 246,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "stripe": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Stripe/Stripe.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "binance": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Binance/Binance.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 12
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "category-scholar-!cn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list",
+          "mode": "all"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Scholar/Scholar.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 229
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "coursera": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 228
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "udemy": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 228
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "edx": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 228
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "khanacademy": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/GlobalScholar.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 1,
+        "domain_suffix_set": 228
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "wikimedia": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Wikimedia/Wikimedia.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 20
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "bbc": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BBC/BBC.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 11,
+        "domain_keyword_set": 2,
+        "domain_suffix_set": 15,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "cnn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/CNN/CNN.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 6
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "nytimes": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NYTimes/NYTimes.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 16
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "wsj": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/USMedia/USMedia.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_set": 4,
+        "domain_suffix_set": 93,
+        "user_agent_set": 1
+      },
+      "no_resolve": false,
+      "unsupported": {
+        "PROCESS-NAME": 3
+      }
+    },
+    "bloomberg": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bloomberg/Bloomberg.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 22
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "amazon": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_keyword_set": 1,
+        "domain_suffix_set": 186,
+        "ip_cidr_set": 15,
+        "url_regex_set": 1,
+        "user_agent_set": 2
+      },
+      "no_resolve": true,
+      "unsupported": {
+        "PROCESS-NAME": 1
+      }
+    },
+    "ebay": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/eBay/eBay.list",
+          "mode": "all"
+        }
+      ],
+      "fields": {
+        "domain_suffix_set": 44
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    },
+    "cn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China_Domain.list",
+          "mode": "non_ip"
+        }
+      ],
+      "fields": {
+        "domain_set": 20,
+        "domain_suffix_set": 3675
+      },
+      "no_resolve": false,
+      "unsupported": {}
+    }
+  },
+  "fallback_existing": [
+    "wise"
+  ]
+}

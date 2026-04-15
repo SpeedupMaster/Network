@@ -1,0 +1,799 @@
+---
+ipv6: false
+http_port: 7897
+socks_port: 7898
+allow_external_connections: true
+block_quic: false
+real_ip_domains:
+  - "*.lan"
+  - "stun.*.*.*"
+  - "stun.*.*"
+  - "time.windows.com"
+  - "time.nist.gov"
+  - "time.apple.com"
+  - "time.asia.apple.com"
+  - "*.ntp.org.cn"
+  - "*.openwrt.pool.ntp.org"
+  - "time1.cloud.tencent.com"
+  - "time.ustc.edu.cn"
+  - "pool.ntp.org"
+  - "ntp.ubuntu.com"
+  - "ntp.aliyun.com"
+  - "ntp1.aliyun.com"
+  - "ntp2.aliyun.com"
+  - "ntp3.aliyun.com"
+  - "ntp4.aliyun.com"
+  - "ntp5.aliyun.com"
+  - "ntp6.aliyun.com"
+  - "ntp7.aliyun.com"
+  - "time1.aliyun.com"
+  - "time2.aliyun.com"
+  - "time3.aliyun.com"
+  - "time4.aliyun.com"
+  - "time5.aliyun.com"
+  - "time6.aliyun.com"
+  - "time7.aliyun.com"
+  - "*.time.edu.cn"
+  - "time1.apple.com"
+  - "time2.apple.com"
+  - "time3.apple.com"
+  - "time4.apple.com"
+  - "time5.apple.com"
+  - "time6.apple.com"
+  - "time7.apple.com"
+  - "time1.google.com"
+  - "time2.google.com"
+  - "time3.google.com"
+  - "time4.google.com"
+  - "music.163.com"
+  - "*.music.163.com"
+  - "*.126.net"
+  - "musicapi.taihe.com"
+  - "music.taihe.com"
+  - "songsearch.kugou.com"
+  - "trackercdn.kugou.com"
+  - "*.kuwo.cn"
+  - "api-jooxtt.sanook.com"
+  - "api.joox.com"
+  - "joox.com"
+  - "y.qq.com"
+  - "*.y.qq.com"
+  - "streamoc.music.tc.qq.com"
+  - "mobileoc.music.tc.qq.com"
+  - "isure.stream.qqmusic.qq.com"
+  - "dl.stream.qqmusic.qq.com"
+  - "aqqmusic.tc.qq.com"
+  - "amobile.music.tc.qq.com"
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - "music.migu.cn"
+  - "*.msftconnecttest.com"
+  - "*.msftncsi.com"
+  - "localhost.ptlogin2.qq.com"
+  - "*.*.*.srv.nintendo.net"
+  - "*.*.stun.playstation.net"
+  - "xbox.*.*.microsoft.com"
+  - "*.ipv6.microsoft.com"
+  - "*.xboxlive.com"
+  - "speedtest.cros.wr.pvp.net"
+hijack_dns:
+  - "*"
+geoip_db_url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+asn_db_url: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+proxy_latency_test_url: "https://www.gstatic.com/generate_204"
+dns:
+  bootstrap:
+    - "system"
+    - "180.76.76.76"
+    - "182.254.118.118"
+    - "8.8.8.8"
+    - "180.184.2.2"
+  upstreams:
+    domestic:
+      - "180.76.76.76"
+      - "119.29.29.29"
+      - "180.184.1.1"
+      - "223.5.5.5"
+      - "8.8.8.8"
+      - "https://223.6.6.6/dns-query"
+      - "https://dns.alidns.com/dns-query"
+      - "https://cloudflare-dns.com/dns-query"
+      - "https://doh.pub/dns-query"
+    remote:
+      - "https://000000.dns.nextdns.io/dns-query"
+      - "https://dns.alidns.com/dns-query"
+      - "https://doh.pub/dns-query"
+      - "https://public.dns.iij.jp/dns-query"
+      - "https://101.101.101.101/dns-query"
+      - "https://208.67.220.220/dns-query"
+      - "tls://8.8.4.4"
+      - "tls://1.0.0.1:853"
+      - "https://cloudflare-dns.com/dns-query"
+      - "https://dns.google/dns-query"
+  forward:
+    - domain_suffix:
+        match: "google.com"
+        value: "remote"
+    - domain_suffix:
+        match: "facebook.com"
+        value: "remote"
+    - domain_suffix:
+        match: "twitter.com"
+        value: "remote"
+    - domain_suffix:
+        match: "youtube.com"
+        value: "remote"
+    - domain_suffix:
+        match: "xn--ngstr-lra8j.com"
+        value: "remote"
+    - domain_suffix:
+        match: "google.cn"
+        value: "remote"
+    - domain_suffix:
+        match: "googleapis.cn"
+        value: "remote"
+    - domain_suffix:
+        match: "googleapis.com"
+        value: "remote"
+    - domain_suffix:
+        match: "gvt1.com"
+        value: "remote"
+    - domain_wildcard:
+        match: "*"
+        value: "domestic"
+  block_ips:
+    - "240.0.0.0/4"
+    - "0.0.0.0/32"
+    - "127.0.0.1/32"
+policy_groups:
+  - external:
+      name: "subscription"
+      type: "select"
+      urls:
+        - "此处替换为你的真实订阅链接"
+      update_interval: 3600
+  - select:
+      name: "🚀 节点选择"
+      policies:
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - auto_test:
+      name: "⚡ 自动选择"
+      policies:
+        - "subscription"
+      flatten: true
+      interval: 300
+      tolerance: 100
+      timeout: 5
+  - select:
+      name: "🛑 广告拦截"
+      policies:
+        - "REJECT"
+        - "DIRECT"
+        - "🚀 节点选择"
+  - select:
+      name: "🤖 AI 服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "✨ Gemini"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📹 油管视频"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🔍 谷歌服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "Ⓜ️ 微软服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🍏 苹果服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📲 电报消息"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🐦 推特/X"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📘 Meta 系"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎙️ Discord"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "💬 其他社交"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎬 奈飞"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🏰 迪士尼+"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📺 欧美流媒体"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎌 亚洲流媒体"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎮 Steam"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🖥️ PC 游戏"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🎯 主机游戏"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🐱 代码托管"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "☁️ 云服务"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🛠️ 开发工具"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "💾 网盘存储"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "💳 支付平台"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "₿ 加密货币"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📚 教育学术"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "📰 新闻资讯"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🛒 海淘购物"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🏠 私有网络"
+      policies:
+        - "DIRECT"
+        - "REJECT"
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "subscription"
+  - select:
+      name: "🔒 国内服务"
+      policies:
+        - "DIRECT"
+        - "REJECT"
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "subscription"
+  - select:
+      name: "🌍 非中国"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+  - select:
+      name: "🐟 漏网之鱼"
+      policies:
+        - "🚀 节点选择"
+        - "⚡ 自动选择"
+        - "DIRECT"
+        - "REJECT"
+        - "subscription"
+rules:
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/category-ads-all.yaml"
+      policy: "🛑 广告拦截"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/google-gemini.yaml"
+      policy: "✨ Gemini"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/category-ai-chat-!cn.yaml"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/openai.yaml"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/anthropic.yaml"
+      policy: "🤖 AI 服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/youtube.yaml"
+      policy: "📹 油管视频"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/category-scholar-!cn.yaml"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/coursera.yaml"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/udemy.yaml"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/edx.yaml"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/khanacademy.yaml"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/wikimedia.yaml"
+      policy: "📚 教育学术"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/aws.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/azure.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/cloudflare.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/digitalocean.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/vercel.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/netlify.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/cloudflare-ip.yaml"
+      policy: "☁️ 云服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/google.yaml"
+      policy: "🔍 谷歌服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/google-ip.yaml"
+      policy: "🔍 谷歌服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/private.yaml"
+      policy: "🏠 私有网络"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/private-ip.yaml"
+      policy: "🏠 私有网络"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/geolocation-cn.yaml"
+      policy: "🔒 国内服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/cn-ip.yaml"
+      policy: "🔒 国内服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/telegram.yaml"
+      policy: "📲 电报消息"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/telegram-ip.yaml"
+      policy: "📲 电报消息"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/github.yaml"
+      policy: "🐱 代码托管"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/gitlab.yaml"
+      policy: "🐱 代码托管"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/atlassian.yaml"
+      policy: "🐱 代码托管"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/microsoft.yaml"
+      policy: "Ⓜ️ 微软服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/onedrive.yaml"
+      policy: "Ⓜ️ 微软服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/apple-tvplus.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/apple.yaml"
+      policy: "🍏 苹果服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/icloud.yaml"
+      policy: "🍏 苹果服务"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/twitter.yaml"
+      policy: "🐦 推特/X"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/twitter-ip.yaml"
+      policy: "🐦 推特/X"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/facebook.yaml"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/instagram.yaml"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/whatsapp.yaml"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/facebook-ip.yaml"
+      policy: "📘 Meta 系"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/discord.yaml"
+      policy: "🎙️ Discord"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/tiktok.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/line.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/reddit.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/linkedin.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/snap.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/pinterest.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/tumblr.yaml"
+      policy: "💬 其他社交"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/netflix.yaml"
+      policy: "🎬 奈飞"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/netflix-ip.yaml"
+      policy: "🎬 奈飞"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/disney.yaml"
+      policy: "🏰 迪士尼+"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/hbo.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/hulu.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/primevideo.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/spotify.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/twitch.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/dazn.yaml"
+      policy: "📺 欧美流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/bahamut.yaml"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/biliintl.yaml"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/niconico.yaml"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/abema.yaml"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/viu.yaml"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/kktv.yaml"
+      policy: "🎌 亚洲流媒体"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/steam.yaml"
+      policy: "🎮 Steam"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/epicgames.yaml"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/ea.yaml"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/ubisoft.yaml"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/blizzard.yaml"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/gog.yaml"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/riot.yaml"
+      policy: "🖥️ PC 游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/playstation.yaml"
+      policy: "🎯 主机游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/xbox.yaml"
+      policy: "🎯 主机游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/nintendo.yaml"
+      policy: "🎯 主机游戏"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/docker.yaml"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/npmjs.yaml"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/jetbrains.yaml"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/stackexchange.yaml"
+      policy: "🛠️ 开发工具"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/dropbox.yaml"
+      policy: "💾 网盘存储"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/notion.yaml"
+      policy: "💾 网盘存储"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/paypal.yaml"
+      policy: "💳 支付平台"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/stripe.yaml"
+      policy: "💳 支付平台"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/wise.yaml"
+      policy: "💳 支付平台"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/binance.yaml"
+      policy: "₿ 加密货币"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/bbc.yaml"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/cnn.yaml"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/nytimes.yaml"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/wsj.yaml"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/bloomberg.yaml"
+      policy: "📰 新闻资讯"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/amazon.yaml"
+      policy: "🛒 海淘购物"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/ebay.yaml"
+      policy: "🛒 海淘购物"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/geolocation-!cn.yaml"
+      policy: "🌍 非中国"
+      update_interval: 86400
+  - rule_set:
+      match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/cn.yaml"
+      policy: "🔒 国内服务"
+      update_interval: 86400
+  - default:
+      policy: "🐟 漏网之鱼"
+
