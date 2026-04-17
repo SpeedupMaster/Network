@@ -36,3 +36,4 @@ domain_suffix_set:
   - "opal.google.com"
   - "generativelanguage.googleapis.com"
   - "geller-pa.googleapis.com"
+  - "stitch.withgoogle.com"

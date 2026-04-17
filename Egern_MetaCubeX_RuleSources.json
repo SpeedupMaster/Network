@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-16T17:20:07.979Z",
+  "generated_at": "2026-04-17T16:57:47.133Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "4d5a07a5ae613ca8d6e193463b7648bdd5bba3df",
-    "date": "2026-04-15T23:11:22Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/4d5a07a5ae613ca8d6e193463b7648bdd5bba3df"
+    "sha": "744898b3363e7be25ed9ffffb014a76507690433",
+    "date": "2026-04-16T23:10:18Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/744898b3363e7be25ed9ffffb014a76507690433"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -15,8 +15,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list",
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
-        "domain_set": 85,
-        "domain_suffix_set": 783
+        "domain_set": 161,
+        "domain_suffix_set": 709
       },
       "no_resolve": false,
       "unsupported": {}
@@ -60,7 +60,7 @@
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
         "ip_cidr_set": 7180,
-        "ip_cidr6_set": 1450
+        "ip_cidr6_set": 1451
       },
       "no_resolve": true,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 670,
-        "domain_suffix_set": 25248
+        "domain_suffix_set": 25291
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 21,
-        "domain_suffix_set": 112
+        "domain_suffix_set": 113
       },
       "no_resolve": false,
       "unsupported": {}
@@ -115,7 +115,7 @@
       "output": "Egern_RuleSets/google-gemini.yaml",
       "fields": {
         "domain_set": 11,
-        "domain_suffix_set": 25
+        "domain_suffix_set": 26
       },
       "no_resolve": false,
       "unsupported": {}
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 2814,
-        "ip_cidr6_set": 3078
+        "ip_cidr_set": 2831,
+        "ip_cidr6_set": 3038
       },
       "no_resolve": true,
       "unsupported": {}
@@ -275,7 +275,7 @@
       "output": "Egern_RuleSets/facebook-ip.yaml",
       "fields": {
         "ip_cidr_set": 68,
-        "ip_cidr6_set": 40
+        "ip_cidr6_set": 41
       },
       "no_resolve": true,
       "unsupported": {}
