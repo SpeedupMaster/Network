@@ -153,28 +153,28 @@ policy_groups:
       update_interval: 3600
   - select:
       name: "香港节点"
-      icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/hk.svg"
+      icon: "https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/HongKong.png"
       policies:
         - "subscription"
       flatten: true
       filter: "(?i)香港|HK|Hong[ _-]?Kong|HKG|🇭🇰"
   - select:
       name: "日本节点"
-      icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/jp.svg"
+      icon: "https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/Japan.png"
       policies:
         - "subscription"
       flatten: true
       filter: "(?i)日本|JP|Japan|Tokyo|Osaka|🇯🇵"
   - select:
       name: "美国节点"
-      icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/us.svg"
+      icon: "https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/UnitedStates.png"
       policies:
         - "subscription"
       flatten: true
       filter: "(?i)美国|US|USA|United[ _-]?States|America|Los[ _-]?Angeles|San[ _-]?Jose|Seattle|Chicago|New[ _-]?York|🇺🇸"
   - select:
       name: "德国节点"
-      icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/de.svg"
+      icon: "https://raw.githubusercontent.com/SpeedupMaster/MySelf/main/image/Germany.png"
       policies:
         - "subscription"
       flatten: true
