@@ -212,53 +212,74 @@ policy_groups:
       name: "✨ Gemini"
       policies:
         - "美国节点"
+        - "香港节点"
+        - "日本节点"
+        - "德国节点"
         - "🚀 节点选择"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🤖 AI 服务"
       policies:
         - "美国节点"
+        - "香港节点"
+        - "日本节点"
+        - "德国节点"
         - "🚀 节点选择"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "📹 油管视频"
       policies:
         - "美国节点"
+        - "香港节点"
+        - "日本节点"
+        - "德国节点"
         - "🚀 节点选择"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "📚 教育学术"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "☁️ 云服务"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🔍 谷歌服务"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🏠 私有网络"
       policies:
@@ -279,186 +300,278 @@ policy_groups:
       name: "📲 电报消息"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🐱 代码托管"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "Ⓜ️ 微软服务"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "📺 欧美流媒体"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🍏 苹果服务"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🐦 推特/X"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "📘 Meta 系"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🎙️ Discord"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "💬 其他社交"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🎬 奈飞"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🏰 迪士尼+"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🎌 亚洲流媒体"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🎮 Steam"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🖥️ PC 游戏"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🎯 主机游戏"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🛠️ 开发工具"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "💾 网盘存储"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "💳 支付平台"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "₿ 加密货币"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "📰 新闻资讯"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🛒 海淘购物"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🌍 非中国"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
   - select:
       name: "🐟 漏网之鱼"
       policies:
         - "🚀 节点选择"
+        - "香港节点"
+        - "日本节点"
+        - "美国节点"
+        - "德国节点"
         - "subscription"
         - "DIRECT"
         - "REJECT"
-      flatten: true
+      flatten: false
 rules:
   - rule_set:
       match: "https://raw.githubusercontent.com/SpeedupMaster/Network/main/Egern_RuleSets/category-ads-all.yaml"
