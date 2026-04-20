@@ -151,6 +151,7 @@ policy_groups:
       urls:
         - "此处替换为你的真实订阅链接"
       update_interval: 3600
+      icon: "https://raw.githubusercontent.com/SpeedupMaster/MySelf/main/image/VPN.png"
   - select:
       name: "香港节点"
       icon: "https://raw.githubusercontent.com/jnlaoshu/MySelf/main/image/HongKong.png"
