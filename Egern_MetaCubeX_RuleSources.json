@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-29T17:42:45.697Z",
+  "generated_at": "2026-04-30T17:25:07.548Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "bc9570f1aac5e8822b32c693c6e73f1db73553ae",
-    "date": "2026-04-28T23:30:10Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/bc9570f1aac5e8822b32c693c6e73f1db73553ae"
+    "sha": "5db46593e72221b80f92404d5b65fea8871aea15",
+    "date": "2026-04-30T07:46:35Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/5db46593e72221b80f92404d5b65fea8871aea15"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -59,7 +59,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 7171,
+        "ip_cidr_set": 7160,
         "ip_cidr6_set": 1457
       },
       "no_resolve": true,
@@ -70,7 +70,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 670,
+        "domain_set": 671,
         "domain_suffix_set": 25308
       },
       "no_resolve": false,
@@ -147,7 +147,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 2841,
+        "ip_cidr_set": 2850,
         "ip_cidr6_set": 3109
       },
       "no_resolve": true,
@@ -989,7 +989,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 117413
+        "domain_suffix_set": 116126
       },
       "no_resolve": false,
       "unsupported": {}
