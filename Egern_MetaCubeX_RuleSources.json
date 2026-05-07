@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-06T17:45:15.856Z",
+  "generated_at": "2026-05-07T17:51:11.805Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "8f0bfeba1a13ac617247318ee0d97a5a7ae12e51",
-    "date": "2026-05-05T23:28:31Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/8f0bfeba1a13ac617247318ee0d97a5a7ae12e51"
+    "sha": "e58f967a5dd83e6228e27c5351bf18b37793df44",
+    "date": "2026-05-06T23:14:41Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/e58f967a5dd83e6228e27c5351bf18b37793df44"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -15,8 +15,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list",
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
-        "domain_set": 162,
-        "domain_suffix_set": 711
+        "domain_set": 164,
+        "domain_suffix_set": 710
       },
       "no_resolve": false,
       "unsupported": {}
@@ -48,8 +48,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-cn.list",
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
-        "domain_set": 41,
-        "domain_suffix_set": 4424
+        "domain_set": 43,
+        "domain_suffix_set": 4422
       },
       "no_resolve": false,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 672,
-        "domain_suffix_set": 25402
+        "domain_set": 700,
+        "domain_suffix_set": 25434
       },
       "no_resolve": false,
       "unsupported": {}
@@ -81,8 +81,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-chat-!cn.list",
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
-        "domain_set": 21,
-        "domain_suffix_set": 121
+        "domain_set": 26,
+        "domain_suffix_set": 123
       },
       "no_resolve": false,
       "unsupported": {}
@@ -158,8 +158,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list",
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
-        "domain_set": 65,
-        "domain_suffix_set": 618
+        "domain_set": 95,
+        "domain_suffix_set": 617
       },
       "no_resolve": false,
       "unsupported": {}
@@ -647,8 +647,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.list",
       "output": "Egern_RuleSets/github.yaml",
       "fields": {
-        "domain_set": 2,
-        "domain_suffix_set": 31
+        "domain_set": 32,
+        "domain_suffix_set": 29
       },
       "no_resolve": false,
       "unsupported": {}
@@ -710,7 +710,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/digitalocean.list",
       "output": "Egern_RuleSets/digitalocean.yaml",
       "fields": {
-        "domain_suffix_set": 5
+        "domain_suffix_set": 6
       },
       "no_resolve": false,
       "unsupported": {}
