@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-09T16:59:50.199Z",
+  "generated_at": "2026-05-11T17:58:39.389Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "a96bbef814aec2b21e879ffed817cc747eea65e0",
-    "date": "2026-05-08T23:31:01Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/a96bbef814aec2b21e879ffed817cc747eea65e0"
+    "sha": "c40879ec34e9920c6c67ce0c07eba9d0a4f65095",
+    "date": "2026-05-10T23:16:26Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/c40879ec34e9920c6c67ce0c07eba9d0a4f65095"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -16,7 +16,7 @@
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
         "domain_set": 164,
-        "domain_suffix_set": 710
+        "domain_suffix_set": 714
       },
       "no_resolve": false,
       "unsupported": {}
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4422
+        "domain_suffix_set": 4441
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 700,
-        "domain_suffix_set": 25436
+        "domain_suffix_set": 25443
       },
       "no_resolve": false,
       "unsupported": {}
@@ -947,7 +947,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/wsj.list",
       "output": "Egern_RuleSets/wsj.yaml",
       "fields": {
-        "domain_suffix_set": 12
+        "domain_suffix_set": 13
       },
       "no_resolve": false,
       "unsupported": {}
@@ -989,7 +989,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 114416
+        "domain_suffix_set": 114171
       },
       "no_resolve": false,
       "unsupported": {}
