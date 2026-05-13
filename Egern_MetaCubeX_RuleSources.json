@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-12T18:02:58.440Z",
+  "generated_at": "2026-05-13T18:05:04.705Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "0a3b07a4145d5da4fd8dee3e043caa1cfc76cf71",
-    "date": "2026-05-11T23:31:23Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/0a3b07a4145d5da4fd8dee3e043caa1cfc76cf71"
+    "sha": "56317d4bdd6c85a92488ada1b4bdb16119fee9d3",
+    "date": "2026-05-12T23:37:40Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/56317d4bdd6c85a92488ada1b4bdb16119fee9d3"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4441
+        "domain_suffix_set": 4474
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 700,
-        "domain_suffix_set": 25443
+        "domain_suffix_set": 25532
       },
       "no_resolve": false,
       "unsupported": {}
@@ -402,7 +402,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/hbo.list",
       "output": "Egern_RuleSets/hbo.yaml",
       "fields": {
-        "domain_suffix_set": 63
+        "domain_suffix_set": 64
       },
       "no_resolve": false,
       "unsupported": {}
