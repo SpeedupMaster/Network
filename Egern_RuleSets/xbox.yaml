@@ -1,6 +1,6 @@
 domain_set:
-  - "flightsimulator.azureedge.net"
   - "prodforza.blob.core.windows.net"
+  - "flightsimulator.azureedge.net"
 domain_suffix_set:
   - "xbox"
   - "gamepass.com"
@@ -26,6 +26,10 @@ domain_suffix_set:
   - "xboxservices.com"
   - "xboxstudios.com"
   - "xbx.lv"
+  - "forza.net"
+  - "forzamotorsport.net"
+  - "forzaracingchampionship.com"
+  - "forzarc.com"
   - "callersbane.com"
   - "minecraft-services.net"
   - "minecraft.net"
@@ -40,8 +44,4 @@ domain_suffix_set:
   - "bethsoft.com"
   - "doom.com"
   - "elderscrolls.com"
-  - "forza.net"
-  - "forzamotorsport.net"
-  - "forzaracingchampionship.com"
-  - "forzarc.com"
   - "xboxlive.cn"
