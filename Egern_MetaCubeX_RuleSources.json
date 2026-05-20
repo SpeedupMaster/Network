@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-19T18:08:58.526Z",
+  "generated_at": "2026-05-20T18:21:45.085Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "4ff68ca0aedf01f4080fc8316d3e26a22e31891b",
-    "date": "2026-05-18T23:37:26Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/4ff68ca0aedf01f4080fc8316d3e26a22e31891b"
+    "sha": "e6ae74bc49ed20f3622175fac7d89ace4af7eaf6",
+    "date": "2026-05-19T23:41:21Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/e6ae74bc49ed20f3622175fac7d89ace4af7eaf6"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4488
+        "domain_suffix_set": 4500
       },
       "no_resolve": false,
       "unsupported": {}
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 7178,
-        "ip_cidr6_set": 1498
+        "ip_cidr_set": 4182,
+        "ip_cidr6_set": 1514
       },
       "no_resolve": true,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 700,
-        "domain_suffix_set": 25557
+        "domain_set": 705,
+        "domain_suffix_set": 25561
       },
       "no_resolve": false,
       "unsupported": {}
@@ -136,7 +136,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.list",
       "output": "Egern_RuleSets/google.yaml",
       "fields": {
-        "domain_set": 264,
+        "domain_set": 233,
         "domain_suffix_set": 836
       },
       "no_resolve": false,
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 2850,
-        "ip_cidr6_set": 3611
+        "ip_cidr_set": 2830,
+        "ip_cidr6_set": 3693
       },
       "no_resolve": true,
       "unsupported": {}
@@ -275,7 +275,7 @@
       "output": "Egern_RuleSets/facebook-ip.yaml",
       "fields": {
         "ip_cidr_set": 68,
-        "ip_cidr6_set": 41
+        "ip_cidr6_set": 40
       },
       "no_resolve": true,
       "unsupported": {}
@@ -381,7 +381,7 @@
       "output": "Egern_RuleSets/netflix-ip.yaml",
       "fields": {
         "ip_cidr_set": 23,
-        "ip_cidr6_set": 56
+        "ip_cidr6_set": 59
       },
       "no_resolve": true,
       "unsupported": {}
@@ -679,7 +679,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/aws.list",
       "output": "Egern_RuleSets/aws.yaml",
       "fields": {
-        "domain_suffix_set": 73
+        "domain_suffix_set": 74
       },
       "no_resolve": false,
       "unsupported": {}
@@ -741,8 +741,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare-ip.yaml",
       "fields": {
-        "ip_cidr_set": 679,
-        "ip_cidr6_set": 238
+        "ip_cidr_set": 681,
+        "ip_cidr6_set": 220
       },
       "no_resolve": true,
       "unsupported": {}
@@ -968,7 +968,7 @@
       "output": "Egern_RuleSets/amazon.yaml",
       "fields": {
         "domain_set": 12,
-        "domain_suffix_set": 232
+        "domain_suffix_set": 233
       },
       "no_resolve": false,
       "unsupported": {}
@@ -989,7 +989,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 113431
+        "domain_suffix_set": 113419
       },
       "no_resolve": false,
       "unsupported": {}
