@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-26T18:30:28.724Z",
+  "generated_at": "2026-05-27T18:29:00.576Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "b6cbb14eec88337548b270a0b6b2ecc252e67a78",
-    "date": "2026-05-25T23:39:33Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/b6cbb14eec88337548b270a0b6b2ecc252e67a78"
+    "sha": "9811f241d157a7d26e8890e560467797d4b9994d",
+    "date": "2026-05-26T23:40:30Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/9811f241d157a7d26e8890e560467797d4b9994d"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -16,7 +16,7 @@
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
         "domain_set": 164,
-        "domain_suffix_set": 715
+        "domain_suffix_set": 716
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 26,
-        "domain_suffix_set": 126
+        "domain_suffix_set": 127
       },
       "no_resolve": false,
       "unsupported": {}
@@ -115,7 +115,7 @@
       "output": "Egern_RuleSets/google-gemini.yaml",
       "fields": {
         "domain_set": 11,
-        "domain_suffix_set": 27
+        "domain_suffix_set": 28
       },
       "no_resolve": false,
       "unsupported": {}
