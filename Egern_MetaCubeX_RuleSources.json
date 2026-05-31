@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-30T17:13:09.164Z",
+  "generated_at": "2026-05-31T17:11:26.363Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "3ea0d2bd516798dc831b836de24d92c7f9000680",
-    "date": "2026-05-29T23:50:27Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/3ea0d2bd516798dc831b836de24d92c7f9000680"
+    "sha": "415d71b22ed2bf53f98f73e389f4660753267a20",
+    "date": "2026-05-30T23:35:03Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/415d71b22ed2bf53f98f73e389f4660753267a20"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 705,
-        "domain_suffix_set": 25609
+        "domain_suffix_set": 25611
       },
       "no_resolve": false,
       "unsupported": {}
@@ -856,7 +856,7 @@
       "output": "Egern_RuleSets/category-scholar-!cn.yaml",
       "fields": {
         "domain_set": 90,
-        "domain_suffix_set": 351
+        "domain_suffix_set": 353
       },
       "no_resolve": false,
       "unsupported": {}
