@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-06T17:18:38.792Z",
+  "generated_at": "2026-06-07T17:22:11.791Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "0707b3ceeedc1f321b846a0b410a7acd332648ef",
-    "date": "2026-06-05T23:47:30Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/0707b3ceeedc1f321b846a0b410a7acd332648ef"
+    "sha": "e662bcc9c046c1ac70156afa222f1415ebe70129",
+    "date": "2026-06-06T23:37:12Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/e662bcc9c046c1ac70156afa222f1415ebe70129"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4607
+        "domain_suffix_set": 4635
       },
       "no_resolve": false,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 707,
-        "domain_suffix_set": 25797
+        "domain_set": 708,
+        "domain_suffix_set": 25838
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 26,
-        "domain_suffix_set": 129
+        "domain_suffix_set": 132
       },
       "no_resolve": false,
       "unsupported": {}
@@ -93,7 +93,7 @@
       "output": "Egern_RuleSets/openai.yaml",
       "fields": {
         "domain_set": 7,
-        "domain_suffix_set": 11
+        "domain_suffix_set": 12
       },
       "no_resolve": false,
       "unsupported": {}
@@ -856,7 +856,7 @@
       "output": "Egern_RuleSets/category-scholar-!cn.yaml",
       "fields": {
         "domain_set": 90,
-        "domain_suffix_set": 353
+        "domain_suffix_set": 385
       },
       "no_resolve": false,
       "unsupported": {}
