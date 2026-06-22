@@ -4,4 +4,7 @@ domain_set:
   - "gog.qtlglb.com"
 domain_suffix_set:
   - "gog.com"
+  - "gog-services.com"
   - "gog-statics.com"
+  - "gogalaxy.com"
+  - "insights-collector.gog.com"
