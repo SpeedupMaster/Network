@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-23T18:01:33.402Z",
+  "generated_at": "2026-06-24T17:58:57.793Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "182526d4d383186b61b71e8f25891823ed54c54a",
-    "date": "2026-06-22T23:51:37Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/182526d4d383186b61b71e8f25891823ed54c54a"
+    "sha": "2d441a1d780e104a42501da6d7bb3db4c1208543",
+    "date": "2026-06-23T23:37:50Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/2d441a1d780e104a42501da6d7bb3db4c1208543"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 722,
-        "domain_suffix_set": 26004
+        "domain_suffix_set": 26015
       },
       "no_resolve": false,
       "unsupported": {}
@@ -159,7 +159,7 @@
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
         "domain_set": 114,
-        "domain_suffix_set": 622
+        "domain_suffix_set": 627
       },
       "no_resolve": false,
       "unsupported": {}
@@ -446,7 +446,7 @@
       "output": "Egern_RuleSets/spotify.yaml",
       "fields": {
         "domain_set": 11,
-        "domain_suffix_set": 15
+        "domain_suffix_set": 17
       },
       "no_resolve": false,
       "unsupported": {}
@@ -648,7 +648,7 @@
       "output": "Egern_RuleSets/github.yaml",
       "fields": {
         "domain_set": 32,
-        "domain_suffix_set": 30
+        "domain_suffix_set": 31
       },
       "no_resolve": false,
       "unsupported": {}
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 112272
+        "domain_suffix_set": 112231
       },
       "no_resolve": false,
       "unsupported": {}
