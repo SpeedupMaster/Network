@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-25T18:13:05.518Z",
+  "generated_at": "2026-06-26T17:52:19.665Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "4d3505e72fa830d3b33895e0d08847f5c6af6014",
-    "date": "2026-06-24T23:43:03Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/4d3505e72fa830d3b33895e0d08847f5c6af6014"
+    "sha": "0f65086cc3739311eab0e489961ac166eae44649",
+    "date": "2026-06-25T23:53:42Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/0f65086cc3739311eab0e489961ac166eae44649"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 4236,
-        "ip_cidr6_set": 1525
+        "ip_cidr_set": 4245,
+        "ip_cidr6_set": 1484
       },
       "no_resolve": true,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 722,
-        "domain_suffix_set": 26016
+        "domain_set": 721,
+        "domain_suffix_set": 26017
       },
       "no_resolve": false,
       "unsupported": {}
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 2869,
-        "ip_cidr6_set": 4125
+        "ip_cidr_set": 2937,
+        "ip_cidr6_set": 4419
       },
       "no_resolve": true,
       "unsupported": {}
@@ -274,8 +274,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.list",
       "output": "Egern_RuleSets/facebook-ip.yaml",
       "fields": {
-        "ip_cidr_set": 75,
-        "ip_cidr6_set": 43
+        "ip_cidr_set": 76,
+        "ip_cidr6_set": 44
       },
       "no_resolve": true,
       "unsupported": {}
@@ -741,8 +741,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare-ip.yaml",
       "fields": {
-        "ip_cidr_set": 645,
-        "ip_cidr6_set": 159
+        "ip_cidr_set": 649,
+        "ip_cidr6_set": 160
       },
       "no_resolve": true,
       "unsupported": {}
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 112231
+        "domain_suffix_set": 112178
       },
       "no_resolve": false,
       "unsupported": {}
