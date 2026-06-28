@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-27T17:15:17.465Z",
+  "generated_at": "2026-06-28T17:17:31.316Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "bab632bc568602eb5a92031091850f0a247e7fab",
-    "date": "2026-06-26T23:44:29Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/bab632bc568602eb5a92031091850f0a247e7fab"
+    "sha": "73b543a7ebd8bde5e7191e84265ba76099b6f704",
+    "date": "2026-06-27T23:36:08Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/73b543a7ebd8bde5e7191e84265ba76099b6f704"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4750
+        "domain_suffix_set": 4765
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 721,
-        "domain_suffix_set": 26017
+        "domain_suffix_set": 26038
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 26,
-        "domain_suffix_set": 132
+        "domain_suffix_set": 133
       },
       "no_resolve": false,
       "unsupported": {}
@@ -137,7 +137,7 @@
       "output": "Egern_RuleSets/google.yaml",
       "fields": {
         "domain_set": 233,
-        "domain_suffix_set": 835
+        "domain_suffix_set": 836
       },
       "no_resolve": false,
       "unsupported": {}
@@ -180,7 +180,7 @@
       "output": "Egern_RuleSets/apple.yaml",
       "fields": {
         "domain_set": 244,
-        "domain_suffix_set": 1536
+        "domain_suffix_set": 1540
       },
       "no_resolve": false,
       "unsupported": {}
@@ -191,7 +191,7 @@
       "output": "Egern_RuleSets/icloud.yaml",
       "fields": {
         "domain_set": 1,
-        "domain_suffix_set": 51
+        "domain_suffix_set": 52
       },
       "no_resolve": false,
       "unsupported": {}
