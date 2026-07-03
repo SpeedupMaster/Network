@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-02T17:52:50.864Z",
+  "generated_at": "2026-07-03T17:36:28.156Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "caf55bad12984a48050ddd45e9b6fa6fa6cf9128",
-    "date": "2026-07-01T23:53:41Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/caf55bad12984a48050ddd45e9b6fa6fa6cf9128"
+    "sha": "065da91918b1e464320d14e7e449ee8fb33cb80c",
+    "date": "2026-07-02T23:38:11Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/065da91918b1e464320d14e7e449ee8fb33cb80c"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -15,7 +15,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list",
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
-        "domain_set": 171,
+        "domain_set": 172,
         "domain_suffix_set": 726
       },
       "no_resolve": false,
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 723,
-        "domain_suffix_set": 26049
+        "domain_set": 724,
+        "domain_suffix_set": 26051
       },
       "no_resolve": false,
       "unsupported": {}
@@ -81,8 +81,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-chat-!cn.list",
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
-        "domain_set": 26,
-        "domain_suffix_set": 133
+        "domain_set": 28,
+        "domain_suffix_set": 134
       },
       "no_resolve": false,
       "unsupported": {}
@@ -92,7 +92,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.list",
       "output": "Egern_RuleSets/openai.yaml",
       "fields": {
-        "domain_set": 7,
+        "domain_set": 9,
         "domain_suffix_set": 12
       },
       "no_resolve": false,
@@ -159,7 +159,7 @@
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
         "domain_set": 114,
-        "domain_suffix_set": 627
+        "domain_suffix_set": 628
       },
       "no_resolve": false,
       "unsupported": {}
