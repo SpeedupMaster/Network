@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-04T17:10:15.803Z",
+  "generated_at": "2026-07-05T17:16:08.858Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "5bc5798c0e98a071a11c5a68ab6a060a66b84863",
-    "date": "2026-07-03T23:36:06Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/5bc5798c0e98a071a11c5a68ab6a060a66b84863"
+    "sha": "171bfcde67c6603aa13da1c6fa40ff3df37ffa31",
+    "date": "2026-07-04T23:32:22Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/171bfcde67c6603aa13da1c6fa40ff3df37ffa31"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4798
+        "domain_suffix_set": 4802
       },
       "no_resolve": false,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 724,
-        "domain_suffix_set": 26051
+        "domain_set": 723,
+        "domain_suffix_set": 26055
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 28,
-        "domain_suffix_set": 134
+        "domain_suffix_set": 135
       },
       "no_resolve": false,
       "unsupported": {}
@@ -159,7 +159,7 @@
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
         "domain_set": 114,
-        "domain_suffix_set": 628
+        "domain_suffix_set": 630
       },
       "no_resolve": false,
       "unsupported": {}
@@ -179,8 +179,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.list",
       "output": "Egern_RuleSets/apple.yaml",
       "fields": {
-        "domain_set": 244,
-        "domain_suffix_set": 1540
+        "domain_set": 245,
+        "domain_suffix_set": 1541
       },
       "no_resolve": false,
       "unsupported": {}
@@ -690,7 +690,7 @@
       "output": "Egern_RuleSets/azure.yaml",
       "fields": {
         "domain_set": 2,
-        "domain_suffix_set": 146
+        "domain_suffix_set": 148
       },
       "no_resolve": false,
       "unsupported": {}
