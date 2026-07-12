@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-11T17:01:14.903Z",
+  "generated_at": "2026-07-12T17:02:17.643Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "05bfd6e7af58d4cc2f06382e82d1a38bb35d1959",
-    "date": "2026-07-10T23:29:59Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/05bfd6e7af58d4cc2f06382e82d1a38bb35d1959"
+    "sha": "05c43196a816b8ddc04a5a32c281018595924d83",
+    "date": "2026-07-11T23:27:07Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/05c43196a816b8ddc04a5a32c281018595924d83"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -16,7 +16,7 @@
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
         "domain_set": 172,
-        "domain_suffix_set": 727
+        "domain_suffix_set": 731
       },
       "no_resolve": false,
       "unsupported": {}
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 43,
-        "domain_suffix_set": 4838
+        "domain_suffix_set": 4886
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 723,
-        "domain_suffix_set": 26063
+        "domain_suffix_set": 26079
       },
       "no_resolve": false,
       "unsupported": {}
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 112062
+        "domain_suffix_set": 111998
       },
       "no_resolve": false,
       "unsupported": {}
