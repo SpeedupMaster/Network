@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-25T17:02:43.546Z",
+  "generated_at": "2026-07-26T17:06:05.153Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "bc11de31c75c5eac1703d33c0e7f5c08d67002ee",
-    "date": "2026-07-24T23:33:22Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/bc11de31c75c5eac1703d33c0e7f5c08d67002ee"
+    "sha": "c4ff8791f0d86505fb7530e883e06ab2b39fe42a",
+    "date": "2026-07-25T23:31:22Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/c4ff8791f0d86505fb7530e883e06ab2b39fe42a"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
