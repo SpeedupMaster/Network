@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T17:43:03.346Z",
+  "generated_at": "2026-08-07T16:56:36.426Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "4fba89083f2d2f097465d7bd543d91f83c6259c8",
-    "date": "2026-08-04T23:34:29Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/4fba89083f2d2f097465d7bd543d91f83c6259c8"
+    "sha": "3167ab7e93d083d70148f7b8ae99ae899de9257f",
+    "date": "2026-08-07T01:39:00Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/3167ab7e93d083d70148f7b8ae99ae899de9257f"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -15,8 +15,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list",
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
-        "domain_set": 172,
-        "domain_suffix_set": 734
+        "domain_set": 162,
+        "domain_suffix_set": 728
       },
       "no_resolve": false,
       "unsupported": {}
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 44,
-        "domain_suffix_set": 5108
+        "domain_suffix_set": 5121
       },
       "no_resolve": false,
       "unsupported": {}
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 4216,
-        "ip_cidr6_set": 1606
+        "ip_cidr_set": 4209,
+        "ip_cidr6_set": 1605
       },
       "no_resolve": true,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 744,
-        "domain_suffix_set": 26164
+        "domain_set": 747,
+        "domain_suffix_set": 26203
       },
       "no_resolve": false,
       "unsupported": {}
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 2869,
-        "ip_cidr6_set": 4866
+        "ip_cidr_set": 2923,
+        "ip_cidr6_set": 4886
       },
       "no_resolve": true,
       "unsupported": {}
@@ -244,7 +244,7 @@
       "output": "Egern_RuleSets/facebook.yaml",
       "fields": {
         "domain_set": 1,
-        "domain_suffix_set": 396
+        "domain_suffix_set": 395
       },
       "no_resolve": false,
       "unsupported": {}
@@ -274,8 +274,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.list",
       "output": "Egern_RuleSets/facebook-ip.yaml",
       "fields": {
-        "ip_cidr_set": 77,
-        "ip_cidr6_set": 43
+        "ip_cidr_set": 76,
+        "ip_cidr6_set": 44
       },
       "no_resolve": true,
       "unsupported": {}
@@ -297,7 +297,7 @@
       "output": "Egern_RuleSets/tiktok.yaml",
       "fields": {
         "domain_set": 5,
-        "domain_suffix_set": 32
+        "domain_suffix_set": 31
       },
       "no_resolve": false,
       "unsupported": {}
@@ -391,8 +391,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/disney.list",
       "output": "Egern_RuleSets/disney.yaml",
       "fields": {
-        "domain_set": 4,
-        "domain_suffix_set": 152
+        "domain_set": 6,
+        "domain_suffix_set": 218
       },
       "no_resolve": false,
       "unsupported": {}
@@ -551,7 +551,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames.list",
       "output": "Egern_RuleSets/epicgames.yaml",
       "fields": {
-        "domain_suffix_set": 29
+        "domain_suffix_set": 30
       },
       "no_resolve": false,
       "unsupported": {}
@@ -700,7 +700,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare.yaml",
       "fields": {
-        "domain_suffix_set": 74
+        "domain_suffix_set": 76
       },
       "no_resolve": false,
       "unsupported": {}
@@ -741,8 +741,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare-ip.yaml",
       "fields": {
-        "ip_cidr_set": 598,
-        "ip_cidr6_set": 97
+        "ip_cidr_set": 596,
+        "ip_cidr6_set": 91
       },
       "no_resolve": true,
       "unsupported": {}
@@ -857,7 +857,7 @@
       "output": "Egern_RuleSets/category-scholar-!cn.yaml",
       "fields": {
         "domain_set": 90,
-        "domain_suffix_set": 385
+        "domain_suffix_set": 386
       },
       "no_resolve": false,
       "unsupported": {}
