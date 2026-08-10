@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-09T16:39:23.270Z",
+  "generated_at": "2026-08-10T16:56:50.681Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "2546b43008384809fac6832b45faaf6f95358973",
-    "date": "2026-08-08T22:59:06Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/2546b43008384809fac6832b45faaf6f95358973"
+    "sha": "5227389156c16fb39f945baf8c919745d4e73776",
+    "date": "2026-08-09T23:01:10Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/5227389156c16fb39f945baf8c919745d4e73776"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 747,
-        "domain_suffix_set": 26203
+        "domain_suffix_set": 26205
       },
       "no_resolve": false,
       "unsupported": {}
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 111293
+        "domain_suffix_set": 111294
       },
       "no_resolve": false,
       "unsupported": {}
