@@ -1,6 +1,6 @@
 domain_set:
-  - "flightsimulator.azureedge.net"
   - "prodforza.blob.core.windows.net"
+  - "flightsimulator.azureedge.net"
 domain_suffix_set:
   - "xbox"
   - "gamepass.com"
@@ -26,8 +26,6 @@ domain_suffix_set:
   - "xboxservices.com"
   - "xboxstudios.com"
   - "xbx.lv"
-  - "asobostudio.com"
-  - "flightsimulator.com"
   - "beth.games"
   - "bethesda.net"
   - "bethesdagamestudios.com"
@@ -44,4 +42,6 @@ domain_suffix_set:
   - "minecraftservices.com"
   - "minecraftshop.com"
   - "mojang.com"
+  - "asobostudio.com"
+  - "flightsimulator.com"
   - "xboxlive.cn"
