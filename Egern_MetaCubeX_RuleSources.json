@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-18T16:34:53.713Z",
+  "generated_at": "2026-08-19T16:34:57.410Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "7957abdce18f41aed2b226b62e73e4eb086f7087",
-    "date": "2026-08-17T22:51:23Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/7957abdce18f41aed2b226b62e73e4eb086f7087"
+    "sha": "f0fe2612af8177aea9cb4d57dd48e04f87f83b0d",
+    "date": "2026-08-18T22:51:30Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/f0fe2612af8177aea9cb4d57dd48e04f87f83b0d"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 748,
-        "domain_suffix_set": 26250
+        "domain_suffix_set": 26251
       },
       "no_resolve": false,
       "unsupported": {}
