@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-19T16:34:57.410Z",
+  "generated_at": "2026-08-20T16:38:17.692Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "f0fe2612af8177aea9cb4d57dd48e04f87f83b0d",
-    "date": "2026-08-18T22:51:30Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/f0fe2612af8177aea9cb4d57dd48e04f87f83b0d"
+    "sha": "8d7ab039b313617c66969fa15c1490f2646e6650",
+    "date": "2026-08-19T22:53:39Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/8d7ab039b313617c66969fa15c1490f2646e6650"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 44,
-        "domain_suffix_set": 5193
+        "domain_suffix_set": 5192
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 748,
-        "domain_suffix_set": 26251
+        "domain_suffix_set": 26263
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 28,
-        "domain_suffix_set": 145
+        "domain_suffix_set": 151
       },
       "no_resolve": false,
       "unsupported": {}
@@ -158,7 +158,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list",
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
-        "domain_set": 114,
+        "domain_set": 113,
         "domain_suffix_set": 633
       },
       "no_resolve": false,
@@ -498,7 +498,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/niconico.list",
       "output": "Egern_RuleSets/niconico.yaml",
       "fields": {
-        "domain_suffix_set": 8
+        "domain_suffix_set": 10
       },
       "no_resolve": false,
       "unsupported": {}
@@ -572,7 +572,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ubisoft.list",
       "output": "Egern_RuleSets/ubisoft.yaml",
       "fields": {
-        "domain_set": 28,
+        "domain_set": 27,
         "domain_suffix_set": 4
       },
       "no_resolve": false,
@@ -679,7 +679,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/aws.list",
       "output": "Egern_RuleSets/aws.yaml",
       "fields": {
-        "domain_suffix_set": 74
+        "domain_suffix_set": 77
       },
       "no_resolve": false,
       "unsupported": {}
@@ -969,7 +969,7 @@
       "output": "Egern_RuleSets/amazon.yaml",
       "fields": {
         "domain_set": 12,
-        "domain_suffix_set": 233
+        "domain_suffix_set": 234
       },
       "no_resolve": false,
       "unsupported": {}
