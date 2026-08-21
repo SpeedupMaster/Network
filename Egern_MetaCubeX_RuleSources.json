@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-20T16:38:17.692Z",
+  "generated_at": "2026-08-21T16:38:12.332Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "8d7ab039b313617c66969fa15c1490f2646e6650",
-    "date": "2026-08-19T22:53:39Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/8d7ab039b313617c66969fa15c1490f2646e6650"
+    "sha": "3808e963dc55b6266de2759cc54d6c320e24f1e0",
+    "date": "2026-08-20T22:56:20Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/3808e963dc55b6266de2759cc54d6c320e24f1e0"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 4145,
-        "ip_cidr6_set": 1235
+        "ip_cidr_set": 4148,
+        "ip_cidr6_set": 1236
       },
       "no_resolve": true,
       "unsupported": {}
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 2948,
-        "ip_cidr6_set": 4954
+        "ip_cidr_set": 2979,
+        "ip_cidr6_set": 4968
       },
       "no_resolve": true,
       "unsupported": {}
@@ -274,8 +274,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.list",
       "output": "Egern_RuleSets/facebook-ip.yaml",
       "fields": {
-        "ip_cidr_set": 78,
-        "ip_cidr6_set": 44
+        "ip_cidr_set": 77,
+        "ip_cidr6_set": 45
       },
       "no_resolve": true,
       "unsupported": {}
@@ -741,8 +741,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare-ip.yaml",
       "fields": {
-        "ip_cidr_set": 608,
-        "ip_cidr6_set": 92
+        "ip_cidr_set": 596,
+        "ip_cidr6_set": 76
       },
       "no_resolve": true,
       "unsupported": {}
