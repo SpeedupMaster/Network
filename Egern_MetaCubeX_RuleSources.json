@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-04T18:53:48.916Z",
+  "generated_at": "2026-09-05T18:00:08.213Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "93b8203bd19e7f85367afefa637d33b6f06af7ca",
-    "date": "2026-09-04T00:17:14Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/93b8203bd19e7f85367afefa637d33b6f06af7ca"
+    "sha": "6dd69d6d3842a4e24d4ddb913e4f94eaeed804c9",
+    "date": "2026-09-05T00:17:44Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/6dd69d6d3842a4e24d4ddb913e4f94eaeed804c9"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 6230,
-        "ip_cidr6_set": 3391
+        "ip_cidr_set": 6229,
+        "ip_cidr6_set": 3393
       },
       "no_resolve": true,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 748,
-        "domain_suffix_set": 26285
+        "domain_suffix_set": 26286
       },
       "no_resolve": false,
       "unsupported": {}
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 3047,
-        "ip_cidr6_set": 5079
+        "ip_cidr_set": 3048,
+        "ip_cidr6_set": 5094
       },
       "no_resolve": true,
       "unsupported": {}
@@ -741,8 +741,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare-ip.yaml",
       "fields": {
-        "ip_cidr_set": 604,
-        "ip_cidr6_set": 75
+        "ip_cidr_set": 597,
+        "ip_cidr6_set": 74
       },
       "no_resolve": true,
       "unsupported": {}
