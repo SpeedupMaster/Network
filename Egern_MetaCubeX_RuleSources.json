@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-10T19:00:44.644Z",
+  "generated_at": "2026-09-11T19:02:47.843Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "a1985d26a15f217dfd539e789c19a6d49f78b624",
-    "date": "2026-09-10T00:35:45Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/a1985d26a15f217dfd539e789c19a6d49f78b624"
+    "sha": "a7e7f1e81a240ec95c8800078036ebf626f82e12",
+    "date": "2026-09-11T00:22:15Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/a7e7f1e81a240ec95c8800078036ebf626f82e12"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 6229,
-        "ip_cidr6_set": 3393
+        "ip_cidr_set": 6246,
+        "ip_cidr6_set": 3401
       },
       "no_resolve": true,
       "unsupported": {}
@@ -147,8 +147,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list",
       "output": "Egern_RuleSets/google-ip.yaml",
       "fields": {
-        "ip_cidr_set": 3048,
-        "ip_cidr6_set": 5094
+        "ip_cidr_set": 3053,
+        "ip_cidr6_set": 5148
       },
       "no_resolve": true,
       "unsupported": {}
@@ -274,7 +274,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.list",
       "output": "Egern_RuleSets/facebook-ip.yaml",
       "fields": {
-        "ip_cidr_set": 78,
+        "ip_cidr_set": 77,
         "ip_cidr6_set": 43
       },
       "no_resolve": true,
@@ -741,8 +741,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cloudflare.list",
       "output": "Egern_RuleSets/cloudflare-ip.yaml",
       "fields": {
-        "ip_cidr_set": 597,
-        "ip_cidr6_set": 74
+        "ip_cidr_set": 607,
+        "ip_cidr6_set": 75
       },
       "no_resolve": true,
       "unsupported": {}
