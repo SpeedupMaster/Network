@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-12T18:13:22.407Z",
+  "generated_at": "2026-09-14T20:12:22.118Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "54722d41648fe80bcabdc712e83bc747a21aee10",
-    "date": "2026-09-12T00:29:31Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/54722d41648fe80bcabdc712e83bc747a21aee10"
+    "sha": "a1bf9c5ed492b6c4603636a0383b9698757d25a5",
+    "date": "2026-09-14T00:22:06Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/a1bf9c5ed492b6c4603636a0383b9698757d25a5"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 111022
+        "domain_suffix_set": 111021
       },
       "no_resolve": false,
       "unsupported": {}
