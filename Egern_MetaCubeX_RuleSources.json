@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-14T20:12:22.118Z",
+  "generated_at": "2026-09-15T19:34:58.187Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "a1bf9c5ed492b6c4603636a0383b9698757d25a5",
-    "date": "2026-09-14T00:22:06Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/a1bf9c5ed492b6c4603636a0383b9698757d25a5"
+    "sha": "a839abd63a215184eae6cf53ed736db39157e2ad",
+    "date": "2026-09-15T00:48:36Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/a839abd63a215184eae6cf53ed736db39157e2ad"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 749,
-        "domain_suffix_set": 26294
+        "domain_set": 750,
+        "domain_suffix_set": 26297
       },
       "no_resolve": false,
       "unsupported": {}
@@ -296,7 +296,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tiktok.list",
       "output": "Egern_RuleSets/tiktok.yaml",
       "fields": {
-        "domain_set": 5,
+        "domain_set": 6,
         "domain_suffix_set": 31
       },
       "no_resolve": false,
@@ -825,7 +825,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/stripe.list",
       "output": "Egern_RuleSets/stripe.yaml",
       "fields": {
-        "domain_suffix_set": 5
+        "domain_suffix_set": 8
       },
       "no_resolve": false,
       "unsupported": {}
