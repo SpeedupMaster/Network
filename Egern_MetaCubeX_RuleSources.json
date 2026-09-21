@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-20T18:34:01.021Z",
+  "generated_at": "2026-09-21T20:18:59.621Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "c260610b7efd8cbd11c4b25208d7e4bf2d4b83bc",
-    "date": "2026-09-20T00:15:48Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/c260610b7efd8cbd11c4b25208d7e4bf2d4b83bc"
+    "sha": "86104b012bc2cf989c4a0e6513ce264787ba948f",
+    "date": "2026-09-21T00:25:21Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/86104b012bc2cf989c4a0e6513ce264787ba948f"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 44,
-        "domain_suffix_set": 5252
+        "domain_suffix_set": 5339
       },
       "no_resolve": false,
       "unsupported": {}
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 750,
-        "domain_suffix_set": 26297
+        "domain_set": 751,
+        "domain_suffix_set": 26302
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 28,
-        "domain_suffix_set": 151
+        "domain_suffix_set": 153
       },
       "no_resolve": false,
       "unsupported": {}
@@ -115,7 +115,7 @@
       "output": "Egern_RuleSets/google-gemini.yaml",
       "fields": {
         "domain_set": 11,
-        "domain_suffix_set": 30
+        "domain_suffix_set": 32
       },
       "no_resolve": false,
       "unsupported": {}
@@ -136,8 +136,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.list",
       "output": "Egern_RuleSets/google.yaml",
       "fields": {
-        "domain_set": 233,
-        "domain_suffix_set": 838
+        "domain_set": 234,
+        "domain_suffix_set": 839
       },
       "no_resolve": false,
       "unsupported": {}
@@ -244,7 +244,7 @@
       "output": "Egern_RuleSets/facebook.yaml",
       "fields": {
         "domain_set": 1,
-        "domain_suffix_set": 395
+        "domain_suffix_set": 396
       },
       "no_resolve": false,
       "unsupported": {}
