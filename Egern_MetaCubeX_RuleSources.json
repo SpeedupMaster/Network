@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T20:30:02.309Z",
+  "generated_at": "2026-10-03T19:06:40.404Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "c98b7dfd30a369df1d093d8394e68f0a2d970ca3",
-    "date": "2026-10-02T01:47:58Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/c98b7dfd30a369df1d093d8394e68f0a2d970ca3"
+    "sha": "cb3e075825906a4dcc2feff84e3d6cc5691d9416",
+    "date": "2026-10-03T01:20:03Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/cb3e075825906a4dcc2feff84e3d6cc5691d9416"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 753,
-        "domain_suffix_set": 26311
+        "domain_suffix_set": 26312
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 30,
-        "domain_suffix_set": 157
+        "domain_suffix_set": 158
       },
       "no_resolve": false,
       "unsupported": {}
@@ -104,7 +104,7 @@
       "output": "Egern_RuleSets/anthropic.yaml",
       "fields": {
         "domain_set": 1,
-        "domain_suffix_set": 7
+        "domain_suffix_set": 8
       },
       "no_resolve": false,
       "unsupported": {}
