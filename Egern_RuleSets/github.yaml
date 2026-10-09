@@ -63,4 +63,5 @@ domain_suffix_set:
   - "npmjs.com"
   - "npmjs.org"
   - "githubcopilot.com"
+  - "cafe.github.com"
   - "collector.github.com"

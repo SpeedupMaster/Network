@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-08T21:09:51.429Z",
+  "generated_at": "2026-10-09T20:40:22.890Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "32bbb6c45c63a491c571f98cd9d863d7fd6771dc",
-    "date": "2026-10-08T02:12:40Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/32bbb6c45c63a491c571f98cd9d863d7fd6771dc"
+    "sha": "ad2798bba7340c09298f364bebedebbfa4398f5b",
+    "date": "2026-10-09T02:24:25Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/ad2798bba7340c09298f364bebedebbfa4398f5b"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -15,8 +15,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list",
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
-        "domain_set": 162,
-        "domain_suffix_set": 748
+        "domain_set": 158,
+        "domain_suffix_set": 745
       },
       "no_resolve": false,
       "unsupported": {}
@@ -70,7 +70,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 753,
+        "domain_set": 757,
         "domain_suffix_set": 26346
       },
       "no_resolve": false,
@@ -159,7 +159,7 @@
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
         "domain_set": 113,
-        "domain_suffix_set": 633
+        "domain_suffix_set": 634
       },
       "no_resolve": false,
       "unsupported": {}
@@ -264,7 +264,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/whatsapp.list",
       "output": "Egern_RuleSets/whatsapp.yaml",
       "fields": {
-        "domain_suffix_set": 13
+        "domain_suffix_set": 11
       },
       "no_resolve": false,
       "unsupported": {}
@@ -648,7 +648,7 @@
       "output": "Egern_RuleSets/github.yaml",
       "fields": {
         "domain_set": 32,
-        "domain_suffix_set": 32
+        "domain_suffix_set": 33
       },
       "no_resolve": false,
       "unsupported": {}
