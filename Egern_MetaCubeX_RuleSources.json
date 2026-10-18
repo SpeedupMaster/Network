@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-17T18:17:27.783Z",
+  "generated_at": "2026-10-18T18:30:35.962Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "48fce8a7df81e254ee1dc8b64d2d34f840208849",
-    "date": "2026-10-17T00:41:55Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/48fce8a7df81e254ee1dc8b64d2d34f840208849"
+    "sha": "1852a7d214920d77c753293c49eb26a996e52081",
+    "date": "2026-10-18T00:10:44Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/1852a7d214920d77c753293c49eb26a996e52081"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -26,7 +26,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.list",
       "output": "Egern_RuleSets/private.yaml",
       "fields": {
-        "domain_set": 12,
+        "domain_set": 14,
         "domain_suffix_set": 118
       },
       "no_resolve": false,
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 756,
-        "domain_suffix_set": 26439
+        "domain_suffix_set": 26445
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 30,
-        "domain_suffix_set": 159
+        "domain_suffix_set": 162
       },
       "no_resolve": false,
       "unsupported": {}
@@ -93,7 +93,7 @@
       "output": "Egern_RuleSets/openai.yaml",
       "fields": {
         "domain_set": 9,
-        "domain_suffix_set": 13
+        "domain_suffix_set": 14
       },
       "no_resolve": false,
       "unsupported": {}
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 110534
+        "domain_suffix_set": 110446
       },
       "no_resolve": false,
       "unsupported": {}
