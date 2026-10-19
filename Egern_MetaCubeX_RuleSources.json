@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-18T18:30:35.962Z",
+  "generated_at": "2026-10-19T20:55:03.178Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "1852a7d214920d77c753293c49eb26a996e52081",
-    "date": "2026-10-18T00:10:44Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/1852a7d214920d77c753293c49eb26a996e52081"
+    "sha": "7c782352439ce9ccaba53519ec816f82f52b6285",
+    "date": "2026-10-19T00:21:49Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/7c782352439ce9ccaba53519ec816f82f52b6285"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 756,
-        "domain_suffix_set": 26445
+        "domain_set": 758,
+        "domain_suffix_set": 26455
       },
       "no_resolve": false,
       "unsupported": {}
@@ -158,8 +158,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list",
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
-        "domain_set": 113,
-        "domain_suffix_set": 634
+        "domain_set": 112,
+        "domain_suffix_set": 632
       },
       "no_resolve": false,
       "unsupported": {}
@@ -424,7 +424,7 @@
       "output": "Egern_RuleSets/primevideo.yaml",
       "fields": {
         "domain_set": 10,
-        "domain_suffix_set": 13
+        "domain_suffix_set": 14
       },
       "no_resolve": false,
       "unsupported": {}
@@ -626,8 +626,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/xbox.list",
       "output": "Egern_RuleSets/xbox.yaml",
       "fields": {
-        "domain_set": 2,
-        "domain_suffix_set": 43
+        "domain_set": 1,
+        "domain_suffix_set": 41
       },
       "no_resolve": false,
       "unsupported": {}
@@ -969,7 +969,7 @@
       "output": "Egern_RuleSets/amazon.yaml",
       "fields": {
         "domain_set": 12,
-        "domain_suffix_set": 234
+        "domain_suffix_set": 235
       },
       "no_resolve": false,
       "unsupported": {}
