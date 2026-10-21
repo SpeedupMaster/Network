@@ -7,6 +7,7 @@ domain_set:
   - "production-openaicom-storage.azureedge.net"
   - "browser-intake-datadoghq.com"
   - "o33249.ingest.sentry.io"
+  - "o33249.ingest.us.sentry.io"
   - "openai.qualtrics.com"
 domain_suffix_set:
   - "oaiusercontent.com"

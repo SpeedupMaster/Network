@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T19:54:42.429Z",
+  "generated_at": "2026-10-21T19:58:01.593Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "d13b14cc2288dd4c61adcc77a90dc2f82ac5316f",
-    "date": "2026-10-20T01:11:29Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/d13b14cc2288dd4c61adcc77a90dc2f82ac5316f"
+    "sha": "ca85be6b1ebf086ec2f6d6885e8b4eba959bede1",
+    "date": "2026-10-21T00:45:48Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/ca85be6b1ebf086ec2f6d6885e8b4eba959bede1"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -15,7 +15,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.list",
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
-        "domain_set": 158,
+        "domain_set": 159,
         "domain_suffix_set": 744
       },
       "no_resolve": false,
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 44,
-        "domain_suffix_set": 5341
+        "domain_suffix_set": 5343
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 760,
-        "domain_suffix_set": 26458
+        "domain_suffix_set": 26460
       },
       "no_resolve": false,
       "unsupported": {}
@@ -81,8 +81,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-chat-!cn.list",
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
-        "domain_set": 30,
-        "domain_suffix_set": 163
+        "domain_set": 31,
+        "domain_suffix_set": 173
       },
       "no_resolve": false,
       "unsupported": {}
@@ -92,7 +92,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.list",
       "output": "Egern_RuleSets/openai.yaml",
       "fields": {
-        "domain_set": 9,
+        "domain_set": 10,
         "domain_suffix_set": 14
       },
       "no_resolve": false,
@@ -104,7 +104,7 @@
       "output": "Egern_RuleSets/anthropic.yaml",
       "fields": {
         "domain_set": 1,
-        "domain_suffix_set": 8
+        "domain_suffix_set": 18
       },
       "no_resolve": false,
       "unsupported": {}
