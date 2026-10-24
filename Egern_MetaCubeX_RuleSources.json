@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-23T19:51:17.673Z",
+  "generated_at": "2026-10-24T18:39:11.495Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "c8c1a27018377ec8a7f60c320efb3023681909eb",
-    "date": "2026-10-23T00:49:48Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/c8c1a27018377ec8a7f60c320efb3023681909eb"
+    "sha": "45a9c7f0489f8b1c7c3ae09192e2a6caa369a265",
+    "date": "2026-10-24T00:56:38Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/45a9c7f0489f8b1c7c3ae09192e2a6caa369a265"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -37,8 +37,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list",
       "output": "Egern_RuleSets/private-ip.yaml",
       "fields": {
-        "ip_cidr_set": 14,
-        "ip_cidr6_set": 4
+        "ip_cidr_set": 16,
+        "ip_cidr6_set": 12
       },
       "no_resolve": true,
       "unsupported": {}
@@ -59,8 +59,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list",
       "output": "Egern_RuleSets/cn-ip.yaml",
       "fields": {
-        "ip_cidr_set": 6525,
-        "ip_cidr6_set": 3488
+        "ip_cidr_set": 6522,
+        "ip_cidr6_set": 3489
       },
       "no_resolve": true,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 762,
-        "domain_suffix_set": 26506
+        "domain_suffix_set": 26507
       },
       "no_resolve": false,
       "unsupported": {}
@@ -990,7 +990,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 110446
+        "domain_suffix_set": 110448
       },
       "no_resolve": false,
       "unsupported": {}
