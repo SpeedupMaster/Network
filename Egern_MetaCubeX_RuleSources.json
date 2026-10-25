@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-24T18:39:11.495Z",
+  "generated_at": "2026-10-25T18:47:54.540Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "45a9c7f0489f8b1c7c3ae09192e2a6caa369a265",
-    "date": "2026-10-24T00:56:38Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/45a9c7f0489f8b1c7c3ae09192e2a6caa369a265"
+    "sha": "2d368ff6025f49e068e848487bac54056e123a79",
+    "date": "2026-10-25T00:29:25Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/2d368ff6025f49e068e848487bac54056e123a79"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -16,7 +16,7 @@
       "output": "Egern_RuleSets/category-ads-all.yaml",
       "fields": {
         "domain_set": 159,
-        "domain_suffix_set": 744
+        "domain_suffix_set": 745
       },
       "no_resolve": false,
       "unsupported": {}
@@ -48,8 +48,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-cn.list",
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
-        "domain_set": 44,
-        "domain_suffix_set": 5343
+        "domain_set": 46,
+        "domain_suffix_set": 5359
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 762,
-        "domain_suffix_set": 26507
+        "domain_suffix_set": 26511
       },
       "no_resolve": false,
       "unsupported": {}
@@ -180,7 +180,7 @@
       "output": "Egern_RuleSets/apple.yaml",
       "fields": {
         "domain_set": 249,
-        "domain_suffix_set": 1541
+        "domain_suffix_set": 1540
       },
       "no_resolve": false,
       "unsupported": {}
@@ -191,7 +191,7 @@
       "output": "Egern_RuleSets/icloud.yaml",
       "fields": {
         "domain_set": 1,
-        "domain_suffix_set": 52
+        "domain_suffix_set": 51
       },
       "no_resolve": false,
       "unsupported": {}
@@ -857,7 +857,7 @@
       "output": "Egern_RuleSets/category-scholar-!cn.yaml",
       "fields": {
         "domain_set": 90,
-        "domain_suffix_set": 386
+        "domain_suffix_set": 376
       },
       "no_resolve": false,
       "unsupported": {}
