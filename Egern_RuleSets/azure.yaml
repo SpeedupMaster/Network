@@ -1,6 +1,8 @@
 domain_set:
   - "azure.microsoft.com"
   - "azuremarketplace.microsoft.com"
+  - "dc.applicationinsights.azure.com"
+  - "live.applicationinsights.azure.com"
 domain_suffix_set:
   - "azure"
   - "aadrm.com"
@@ -101,6 +103,7 @@ domain_suffix_set:
   - "chinacloudapp.cn"
   - "chinacloudsites.cn"
   - "hdinsightservices.cn"
+  - "in.applicationinsights.azure.com"
   - "management-azure-devices-provisioning.cn"
   - "management-azure-devices.cn"
   - "mcchcdn.com"
