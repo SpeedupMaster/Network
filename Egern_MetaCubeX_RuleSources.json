@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-27T20:30:14.134Z",
+  "generated_at": "2026-10-28T20:51:47.481Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "251f53ed936ccefc5ed6407b0b85a06878e3dbe1",
-    "date": "2026-10-27T01:37:12Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/251f53ed936ccefc5ed6407b0b85a06878e3dbe1"
+    "sha": "9f2b7462c7508ad85a1137e70d502b783c89794d",
+    "date": "2026-10-28T01:34:29Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/9f2b7462c7508ad85a1137e70d502b783c89794d"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 768,
-        "domain_suffix_set": 26496
+        "domain_suffix_set": 26503
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 34,
-        "domain_suffix_set": 173
+        "domain_suffix_set": 179
       },
       "no_resolve": false,
       "unsupported": {}
@@ -179,7 +179,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.list",
       "output": "Egern_RuleSets/apple.yaml",
       "fields": {
-        "domain_set": 249,
+        "domain_set": 251,
         "domain_suffix_set": 1540
       },
       "no_resolve": false,
@@ -989,7 +989,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list",
       "output": "Egern_RuleSets/cn.yaml",
       "fields": {
-        "domain_suffix_set": 110175
+        "domain_suffix_set": 110177
       },
       "no_resolve": false,
       "unsupported": {}
