@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-30T20:34:03.324Z",
+  "generated_at": "2026-10-31T19:47:11.554Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "4d9cbf4cc642e29a5cb016a724083094d9a01d99",
-    "date": "2026-10-30T02:05:45Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/4d9cbf4cc642e29a5cb016a724083094d9a01d99"
+    "sha": "e11abe987d686ab803ba4f7cd018324852a6befd",
+    "date": "2026-10-31T01:46:28Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/e11abe987d686ab803ba4f7cd018324852a6befd"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 46,
-        "domain_suffix_set": 5361
+        "domain_suffix_set": 5364
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 768,
-        "domain_suffix_set": 26504
+        "domain_suffix_set": 26512
       },
       "no_resolve": false,
       "unsupported": {}
@@ -159,7 +159,7 @@
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
         "domain_set": 116,
-        "domain_suffix_set": 635
+        "domain_suffix_set": 637
       },
       "no_resolve": false,
       "unsupported": {}
@@ -297,7 +297,7 @@
       "output": "Egern_RuleSets/tiktok.yaml",
       "fields": {
         "domain_set": 6,
-        "domain_suffix_set": 31
+        "domain_suffix_set": 34
       },
       "no_resolve": false,
       "unsupported": {}
