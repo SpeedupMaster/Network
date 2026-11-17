@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-15T20:53:50.984Z",
+  "generated_at": "2026-11-17T00:03:19.076Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "f181fff77f5f243f69bfc12b45e0fa10bed899fc",
-    "date": "2026-11-15T02:03:48Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/f181fff77f5f243f69bfc12b45e0fa10bed899fc"
+    "sha": "c50286e52b8f6497af083871747d4b49a4bb77a2",
+    "date": "2026-11-16T02:20:30Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/c50286e52b8f6497af083871747d4b49a4bb77a2"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -70,8 +70,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list",
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
-        "domain_set": 771,
-        "domain_suffix_set": 26537
+        "domain_set": 774,
+        "domain_suffix_set": 26539
       },
       "no_resolve": false,
       "unsupported": {}
@@ -158,7 +158,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list",
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
-        "domain_set": 117,
+        "domain_set": 120,
         "domain_suffix_set": 637
       },
       "no_resolve": false,
@@ -179,8 +179,8 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.list",
       "output": "Egern_RuleSets/apple.yaml",
       "fields": {
-        "domain_set": 252,
-        "domain_suffix_set": 1540
+        "domain_set": 255,
+        "domain_suffix_set": 1541
       },
       "no_resolve": false,
       "unsupported": {}
