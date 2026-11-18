@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T23:23:53.890Z",
+  "generated_at": "2026-11-18T22:52:41.160Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "1916b151c3661fc74f709ac69c271ff9ae912027",
-    "date": "2026-11-17T04:43:35Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/1916b151c3661fc74f709ac69c271ff9ae912027"
+    "sha": "39ef714731b5523b471d6868f8e3e6e83d915611",
+    "date": "2026-11-18T03:49:01Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/39ef714731b5523b471d6868f8e3e6e83d915611"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 37,
-        "domain_suffix_set": 180
+        "domain_suffix_set": 181
       },
       "no_resolve": false,
       "unsupported": {}
