@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-24T02:47:46.892Z",
+  "generated_at": "2026-11-25T00:27:22.123Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "13c258bce343dfc81d5600e535a59588386ef4b9",
-    "date": "2026-11-23T02:59:34Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/13c258bce343dfc81d5600e535a59588386ef4b9"
+    "sha": "ce616601064422e7acfe75ea201549dc7372becf",
+    "date": "2026-11-24T06:15:27Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/ce616601064422e7acfe75ea201549dc7372becf"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -49,7 +49,7 @@
       "output": "Egern_RuleSets/geolocation-cn.yaml",
       "fields": {
         "domain_set": 46,
-        "domain_suffix_set": 5408
+        "domain_suffix_set": 5412
       },
       "no_resolve": false,
       "unsupported": {}
@@ -71,7 +71,7 @@
       "output": "Egern_RuleSets/geolocation-!cn.yaml",
       "fields": {
         "domain_set": 774,
-        "domain_suffix_set": 26453
+        "domain_suffix_set": 26454
       },
       "no_resolve": false,
       "unsupported": {}
@@ -82,7 +82,7 @@
       "output": "Egern_RuleSets/category-ai-chat-!cn.yaml",
       "fields": {
         "domain_set": 37,
-        "domain_suffix_set": 181
+        "domain_suffix_set": 182
       },
       "no_resolve": false,
       "unsupported": {}
@@ -115,7 +115,7 @@
       "output": "Egern_RuleSets/google-gemini.yaml",
       "fields": {
         "domain_set": 16,
-        "domain_suffix_set": 33
+        "domain_suffix_set": 34
       },
       "no_resolve": false,
       "unsupported": {}
@@ -137,7 +137,7 @@
       "output": "Egern_RuleSets/google.yaml",
       "fields": {
         "domain_set": 239,
-        "domain_suffix_set": 839
+        "domain_suffix_set": 840
       },
       "no_resolve": false,
       "unsupported": {}
