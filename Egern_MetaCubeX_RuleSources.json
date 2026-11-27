@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-27T00:24:54.532Z",
+  "generated_at": "2026-11-27T23:56:48.228Z",
   "source": "MetaCubeX/meta-rules-dat",
   "ref": "meta",
   "upstream": {
-    "sha": "69f94483c308940c277035c66eb78ff529efd977",
-    "date": "2026-11-26T04:17:08Z",
-    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/69f94483c308940c277035c66eb78ff529efd977"
+    "sha": "59032b3daac1d1a2643a77d6189c2a882900d54a",
+    "date": "2026-11-27T04:26:32Z",
+    "html_url": "https://github.com/MetaCubeX/meta-rules-dat/commit/59032b3daac1d1a2643a77d6189c2a882900d54a"
   },
   "provider_manifest": "MetaCubeX_Providers.json",
   "output_dir": "Egern_RuleSets",
@@ -158,7 +158,7 @@
       "source_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list",
       "output": "Egern_RuleSets/microsoft.yaml",
       "fields": {
-        "domain_set": 120,
+        "domain_set": 121,
         "domain_suffix_set": 637
       },
       "no_resolve": false,
